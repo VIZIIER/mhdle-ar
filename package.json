@@ -1,0 +1,44 @@
+{
+  "name": "mhdle-ar-en",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bilingual (Arabic/English) Monster Hunter guessing game in the style of MHDLE. Static, GitHub Pages ready.",
+  "scripts": {
+    "data:build": "node scripts/build-data.mjs",
+    "data:validate": "node scripts/validate-data.mjs",
+    "media:manifest": "node scripts/build-media-manifest.mjs",
+    "predev": "node scripts/build-media-manifest.mjs",
+    "dev": "vite",
+    "prebuild": "node scripts/build-media-manifest.mjs && node scripts/validate-data.mjs",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "test": "vitest run",
+    "typecheck": "tsc -b --noEmit",
+    "test:e2e": "playwright test",
+    "test:all": "npm test && npm run build && playwright test"
+  },
+  "dependencies": {
+    "@fontsource/cinzel": "^5.3.0",
+    "@fontsource/ibm-plex-sans-arabic": "^5.3.0",
+    "@fontsource/reem-kufi": "^5.3.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.56.1",
+    "@testing-library/react": "^16.3.3",
+    "@types/node": "^26.6.5",
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "jsdom": "^29.1.1",
+    "typescript": "^7.0.2",
+    "vite": "^8.3.4",
+    "vitest": "^5.0.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

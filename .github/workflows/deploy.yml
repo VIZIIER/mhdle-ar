@@ -1,0 +1,72 @@
+# Builds, tests and publishes the site to GitHub Pages on every push to main.
+# Uses the standard Pages flow: upload the build output as an artifact, then deploy it
+# with the official actions/deploy-pages action.
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch: # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Unit tests
+        run: npm test
+
+      # Validates the data, regenerates the media manifest and builds to dist/
+      - name: Build
+        run: npm run build
+
+      - name: Install browser for end-to-end tests
+        run: npx playwright install --with-deps chromium
+
+      # Serves dist/ from a /test-repo/ sub-path, like GitHub Pages, and plays through every mode.
+      - name: End-to-end tests
+        run: npm run test:e2e
+
+      - name: Keep the test report if something failed
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-report
+          path: playwright-report
+          retention-days: 7
+
+      - uses: actions/configure-pages@v5
+
+      - name: Upload site
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

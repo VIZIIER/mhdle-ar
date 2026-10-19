@@ -1,0 +1,26 @@
+{
+  "_note": "Game ids are stable and ORDERED: the order of 'games' defines the bit positions used in share links (?s=). Only ever append new games at the end.",
+  "games": [
+    { "id": "mh1",     "wiki": "MH1",     "year": 2004, "gen": 1, "en": "Monster Hunter", "ar": "مونستر هنتر", "short": "MH" },
+    { "id": "mhg",     "wiki": "MHG",     "year": 2005, "gen": 1, "en": "Monster Hunter G", "ar": "مونستر هنتر G", "short": "MHG" },
+    { "id": "mhf1",    "wiki": "MHF1",    "year": 2005, "gen": 1, "en": "Monster Hunter Freedom / Portable", "ar": "مونستر هنتر فريدوم / بورتابل", "short": "MHF1" },
+    { "id": "mh2",     "wiki": "MH2",     "year": 2006, "gen": 2, "en": "Monster Hunter 2 (Dos)", "ar": "مونستر هنتر 2 (دوس)", "short": "MH2" },
+    { "id": "mhf2",    "wiki": "MHF2",    "year": 2007, "gen": 2, "en": "Monster Hunter Freedom 2 / Portable 2nd", "ar": "مونستر هنتر فريدوم 2 / بورتابل الثاني", "short": "MHF2" },
+    { "id": "mhfu",    "wiki": "MHFU",    "year": 2008, "gen": 2, "en": "Monster Hunter Freedom Unite / Portable 2nd G", "ar": "مونستر هنتر فريدوم يونايت / بورتابل الثاني G", "short": "MHFU" },
+    { "id": "mh3",     "wiki": "MH3",     "year": 2009, "gen": 3, "en": "Monster Hunter Tri (3)", "ar": "مونستر هنتر تراي (3)", "short": "MH3" },
+    { "id": "mhp3",    "wiki": "MHP3",    "year": 2010, "gen": 3, "en": "Monster Hunter Portable 3rd", "ar": "مونستر هنتر بورتابل الثالث", "short": "MHP3" },
+    { "id": "mh3u",    "wiki": "MH3U",    "year": 2011, "gen": 3, "en": "Monster Hunter 3 Ultimate / 3G", "ar": "مونستر هنتر 3 ألتيمت / 3G", "short": "MH3U" },
+    { "id": "mh4",     "wiki": "MH4",     "year": 2013, "gen": 4, "en": "Monster Hunter 4", "ar": "مونستر هنتر 4", "short": "MH4" },
+    { "id": "mh4u",    "wiki": "MH4U",    "year": 2014, "gen": 4, "en": "Monster Hunter 4 Ultimate / 4G", "ar": "مونستر هنتر 4 ألتيمت / 4G", "short": "MH4U" },
+    { "id": "mhgen",   "wiki": "MHGen",   "year": 2015, "gen": 4, "en": "Monster Hunter Generations / X", "ar": "مونستر هنتر جينيريشنز / X", "short": "MHGen" },
+    { "id": "mhgu",    "wiki": "MHGU",    "year": 2017, "gen": 4, "en": "Monster Hunter Generations Ultimate / XX", "ar": "مونستر هنتر جينيريشنز ألتيمت / XX", "short": "MHGU" },
+    { "id": "mhw",     "wiki": "MHW",     "year": 2018, "gen": 5, "en": "Monster Hunter: World", "ar": "مونستر هنتر: وورلد", "short": "MHW" },
+    { "id": "mhwi",    "wiki": "MHWI",    "year": 2019, "gen": 5, "en": "Monster Hunter World: Iceborne", "ar": "مونستر هنتر وورلد: آيسبورن", "short": "MHWI" },
+    { "id": "mhrise",  "wiki": "MHRise",  "year": 2021, "gen": 5, "en": "Monster Hunter Rise", "ar": "مونستر هنتر رايز", "short": "MHRise" },
+    { "id": "mhrs",    "wiki": "MHRS",    "year": 2022, "gen": 5, "en": "Monster Hunter Rise: Sunbreak", "ar": "مونستر هنتر رايز: صن بريك", "short": "MHRS" },
+    { "id": "mhwilds", "wiki": "MHWilds", "year": 2025, "gen": 6, "en": "Monster Hunter Wilds", "ar": "مونستر هنتر وايلدز", "short": "MHWilds" }
+  ],
+  "displayOnly": [
+    { "id": "mhfrontier", "year": 2007, "gen": 2, "en": "Monster Hunter Frontier", "ar": "مونستر هنتر فرونتير", "short": "MHFrontier" }
+  ]
+}

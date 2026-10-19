@@ -1,0 +1,37 @@
+{
+  "_about": "Manual corrections applied on top of wiki.json by scripts/build-data.mjs. Every patch is taken from the same Monster Hunter Wiki page (CC BY-SA) where the automated extraction failed, or maps a wiki value onto this project's vocabulary. 'reason' explains each one.",
+  "patches": {
+    "Gravios": {
+      "reason": "Page uses the 'New Monster Infobox' template, which the extractor did not read. Values transcribed from that infobox; Poison is listed for 6th Gen (Wilds), a main-series game.",
+      "c": "Flying Wyvern", "e": ["Fire"], "a": ["Fireblight", "Sleep", "Poison"], "w": ["Water"],
+      "s": [1049.35, 3065.9], "g": 1, "ti": ["Armor Wyvern"]
+    },
+    "Lagiacrus": {
+      "reason": "'Weakest to' uses a malformed <br/ > tag that broke line splitting. Infobox lists Fire (Earth is a spin-off-only element).",
+      "w": ["Fire"]
+    },
+    "Safi'jiiva": {
+      "reason": "Infobox 'Weakest to' reads 'All'.",
+      "w": ["Fire", "Water", "Thunder", "Ice", "Dragon"]
+    },
+    "Gore Magala": {
+      "reason": "Wiki lists '???' type (4th-5th Gen) and Demi Elder (Wilds).",
+      "c": ["Unclassified", "Demi Elder"]
+    },
+    "Chaotic Gore Magala": { "reason": "Wiki lists '???' type.", "c": ["Unclassified"] },
+    "Omega Planetes": { "reason": "Wiki lists '???' type.", "c": ["Unclassified"] },
+    "Apex Diablos": {
+      "reason": "Infobox 'Weakest to' reads '?'. Kept as unknown rather than guessing.",
+      "unknown": ["weaknesses"]
+    },
+    "Green Plesioth": {
+      "reason": "Titles were stored comma-separated in one field.",
+      "ti": ["Green Water Wyvern", "The Tide"]
+    },
+    "Rey Dau": {
+      "reason": "Third title contains wiki link markup; only the first two are used.",
+      "ti": ["Shining Thunder Wyvern", "Earth-Piercing Bolt"]
+    }
+  },
+  "firstAppearanceFallback": "When the wiki lead sentence names no game, the earliest main-series game in the monster's game list is used (affects collaboration and Wilds monsters whose lead sentence is phrased differently)."
+}

@@ -1,0 +1,270 @@
+{
+  "app": {
+    "title": "MH DLE",
+    "tagline": "Find the monsters of the day",
+    "docTitle": "MH DLE · Monster Hunter guessing game",
+    "skip": "Skip to the game",
+    "disclaimer": "Unofficial fan game. Monster Hunter and its monster names are trademarks of Capcom Co., Ltd. This site isn't affiliated with or endorsed by Capcom.",
+    "dataCredit": "Monster data: Monster Hunter Wiki (Fandom), CC BY-SA 3.0."
+  },
+  "nav": {
+    "home": "Quest board",
+    "about": "How to play",
+    "stats": "Statistics",
+    "games": "Choose games",
+    "language": "Language",
+    "switchLanguage": "العربية",
+    "switchLanguageLabel": "التبديل إلى العربية",
+    "back": "Back to the quest board",
+    "modes": "Game modes"
+  },
+  "modes": {
+    "classic": {
+      "name": "Classic",
+      "tagline": "Guess from its characteristics",
+      "question": "Guess today's monster!",
+      "intro": "Search for any monster to get your first clues, then follow your logic.",
+      "flavor": "The guild has logged your hunt."
+    },
+    "compendium": {
+      "name": "Compendium",
+      "tagline": "Guess from a field-guide entry",
+      "question": "Which monster does this entry describe?",
+      "intro": "The monster's name is hidden in the text. Hints unlock as you guess.",
+      "flavor": "The commission adds your notes to the compendium."
+    },
+    "surveyor": {
+      "name": "Surveyor",
+      "tagline": "Guess from a hidden picture",
+      "question": "Which monster is hiding in this picture?",
+      "intro": "The picture starts as a dark blur and gets clearer with every wrong guess.",
+      "flavor": "Sharp eyes, hunter. The survey is complete."
+    },
+    "roar": {
+      "name": "Roar",
+      "tagline": "Guess from its cry",
+      "question": "Which monster makes that sound?",
+      "intro": "Listen as many times as you like. Hints unlock as you guess.",
+      "flavor": "You recognised that cry straight away."
+    }
+  },
+  "home": {
+    "heading": "Today's quests",
+    "msgFirst": "Welcome, hunter! Clear every quest each day and the guild will keep track of your streak.",
+    "msgProgress": {
+      "one": "Well done, hunter! You've cleared {count} quest out of {total}. Keep going!",
+      "other": "Well done, hunter! You've cleared {count} quests out of {total}. Keep going!"
+    },
+    "msgAllDone": {
+      "one": "Well done, hunter! You've cleared every quest {count} day in a row. Come back tomorrow!",
+      "other": "Well done, hunter! You've cleared every quest {count} days in a row. Come back tomorrow!"
+    },
+    "msgLost": {
+      "one": "While you were away, the village was attacked… your {count}-day streak was lost.",
+      "other": "While you were away, the village was attacked… your {count}-day streak was lost."
+    },
+    "msgYesterday": "Thanks for your help yesterday. Today's quests are waiting.",
+    "msgIdle": "Clear today's quests, hunter. Every victory counts.",
+    "cleared": "Cleared",
+    "open": "Start quest",
+    "continue": "Continue",
+    "triesSoFar": {
+      "one": "{count} try so far",
+      "other": "{count} tries so far"
+    },
+    "nextIn": "New monsters in",
+    "selection": {
+      "one": "Playing with {count} game selected",
+      "other": "Playing with {count} games selected"
+    },
+    "hiddenModes": "Surveyor and Roar appear here once monster pictures and sounds are installed.",
+    "changeGames": "Change my game choices"
+  },
+  "game": {
+    "searchLabel": "Monster name",
+    "searchPlaceholder": "Type a monster name…",
+    "searchHelp": "Search in English or Arabic. Use the arrow keys and Enter to pick.",
+    "noResults": "No monster in your selected games matches “{query}”.",
+    "guess": "Guess",
+    "tries": {
+      "one": "{count} try",
+      "other": "{count} tries"
+    },
+    "sameStats": "Every characteristic matches, but this isn't the monster we're looking for. Keep searching, hunter!",
+    "wrongGuesses": "Your guesses",
+    "none": "None",
+    "unknown": "?",
+    "unknownTitle": "No data in the source",
+    "poolEmpty": "None of your selected games has a monster for this quest.",
+    "chooseGames": "Choose games",
+    "loading": "Loading…"
+  },
+  "hints": {
+    "class": "Class",
+    "nickname": "Nickname",
+    "locked": {
+      "one": "{count} more wrong guess before the {hint} hint",
+      "other": "{count} more wrong guesses before the {hint} hint"
+    },
+    "reveal": "Show the {hint} hint",
+    "noNickname": "This monster has no known nickname."
+  },
+  "classic": {
+    "monster": "Monster",
+    "elements": "Element",
+    "ailments": "Ailments",
+    "weaknesses": "Weaknesses",
+    "classes": "Class",
+    "maxSize": "Max size",
+    "minSize": "Min size",
+    "threat": "Threat level",
+    "firstGame": "First appearance",
+    "generation": "Generation",
+    "size": "{value} cm",
+    "threatOne": "{n}★",
+    "threatRange": "{min}–{max}★",
+    "generationValue": "Gen {n}",
+    "legendTitle": "Colour key",
+    "correct": "Correct",
+    "partial": "Partial",
+    "incorrect": "Incorrect",
+    "higher": "Higher",
+    "lower": "Lower",
+    "noData": "No data",
+    "partialNote": "Partial means some values match. For threat level it means the ranges overlap.",
+    "higherTitle": "The answer is higher",
+    "lowerTitle": "The answer is lower",
+    "scrollNote": "Scroll sideways to see every column."
+  },
+  "surveyor": {
+    "imageAlt": "Blurred picture of the mystery monster",
+    "clearer": "The picture gets clearer with every wrong guess."
+  },
+  "roar": {
+    "play": "Play the roar",
+    "pause": "Pause",
+    "volume": "Volume",
+    "progress": "Playback position"
+  },
+  "win": {
+    "title": "Quest complete!",
+    "answer": "The monster was {name}",
+    "in": {
+      "one": "Found on the first try.",
+      "other": "Found in {count} tries."
+    },
+    "infinite": "Play {mode} again (infinite)",
+    "infiniteNext": "Next infinite monster",
+    "infiniteBadge": "Infinite mode",
+    "infiniteNote": "Infinite rounds don't count towards your streak or statistics.",
+    "backToDaily": "Back to today's result",
+    "nextIn": "Next daily monster in",
+    "newDay": "A new monster is waiting.",
+    "loadNewDay": "Hunt the new monster",
+    "otherQuests": "Other quests",
+    "pictureAlt": "Picture of {name}",
+    "stamp": "Cleared"
+  },
+  "countdown": {
+    "format": "{h}h {m}m {s}s"
+  },
+  "share": {
+    "heading": "Share your hunt",
+    "copy": "Copy message",
+    "copied": "Message copied",
+    "copyFailed": "Couldn't copy. Select the text above and copy it yourself.",
+    "share": "Share",
+    "note": "The link keeps your game selection, so your friend hunts the very same monster.",
+    "head": {
+      "classic": "I hunted today's monster",
+      "compendium": "I tracked down today's monster",
+      "surveyor": "I spotted today's monster",
+      "roar": "I guessed today's monster by its roar"
+    },
+    "result": {
+      "one": "on the first try",
+      "other": "in {count} tries"
+    },
+    "outro": "Who can do better?",
+    "outroFirst": "Can you match that?",
+    "earlier": {
+      "one": "… (+{count} earlier try)",
+      "other": "… (+{count} earlier tries)"
+    },
+    "cta": "Your turn:"
+  },
+  "challenge": {
+    "banner": {
+      "one": "A friend found today's monster on the first try. Can you match that?",
+      "other": "A friend found today's monster in {count} tries. Can you do better?"
+    },
+    "win": "You beat your friend: {mine} against {theirs}!",
+    "tie": "It's a tie: {mine} each!",
+    "lose": "Your friend did better ({theirs} against {mine}). Rematch tomorrow!",
+    "adoptTitle": "Play with your friend's games?",
+    "adoptText": "This link was shared with a different game selection. Switch to it to hunt the same monster as your friend?",
+    "adoptYes": "Use their games",
+    "adoptNo": "Keep my games"
+  },
+  "settings": {
+    "title": "Hunter, prepare your quests!",
+    "text": "Pick the games you've played. Only monsters from those games will appear as answers and in search.",
+    "generation": "Generation {n}",
+    "selectAll": "All",
+    "monsters": {
+      "one": "{count} monster available",
+      "other": "{count} monsters available"
+    },
+    "needOne": "Pick at least one game.",
+    "save": "Save and play",
+    "cancel": "Cancel",
+    "changeNote": "Changing games can change today's monsters. Quests you've already cleared stay cleared."
+  },
+  "stats": {
+    "title": "Hunter's record",
+    "streak": "Current streak",
+    "best": "Best streak",
+    "days": {
+      "one": "{count} day",
+      "other": "{count} days"
+    },
+    "mode": "Quest",
+    "wins": "Daily wins",
+    "average": "Average tries",
+    "fewest": "Fewest tries",
+    "infiniteWins": "Infinite wins",
+    "empty": "—",
+    "reset": "Reset all progress",
+    "resetConfirm": "Erase all progress, streaks and statistics saved on this device?",
+    "close": "Close"
+  },
+  "unavailable": {
+    "title": "This quest isn't installed",
+    "text": "Surveyor needs monster pictures and Roar needs monster sounds. Add files named after monster ids (for example rathalos.webp or rathalos.mp3) to public/media/images or public/media/audio, then rebuild the site."
+  },
+  "notFound": {
+    "title": "This page doesn't exist",
+    "link": "Go to the quest board"
+  },
+  "about": {
+    "title": "How to play",
+    "intro": "Every day brings one monster per quest. Pick it from the search box; each wrong guess gives you more to go on. There's no limit on guesses. A new set of monsters arrives at midnight, your local time.",
+    "classicTitle": "Classic",
+    "classicText": "Each guess adds a row comparing your monster with the answer. Green is a match, orange a partial match (some shared values, or an overlapping threat range), red no match. Arrows show whether the answer's size, threat level or generation is higher or lower.",
+    "compendiumTitle": "Compendium",
+    "compendiumText": "Read a field-guide entry with the name hidden. After 5 wrong guesses you can open the monster's class, after 10 one of its nicknames.",
+    "surveyorTitle": "Surveyor",
+    "surveyorText": "The picture starts as a dark blur. Every wrong guess makes it sharper and brighter.",
+    "roarTitle": "Roar",
+    "roarText": "Play the monster's cry. The class and nickname hints unlock after 5 and 10 wrong guesses.",
+    "extraTitle": "Infinite mode, streaks and sharing",
+    "extraText": "After clearing a daily quest you can keep playing with random monsters in infinite mode. Clear every quest on a day to grow your streak; miss a day and it resets. Share your result with a link that carries your game selection, so friends get the same monster and see your score to beat.",
+    "dataTitle": "Data and credits",
+    "dataText": "Monster attributes come from the Monster Hunter Wiki on Fandom, used under CC BY-SA 3.0. Descriptions and Arabic text were written for this project. Sizes are gold-crown sizes in centimetres; threat levels are the star ratings shown in-game, where the wiki records them. Missing values are shown as “?”.",
+    "privacyTitle": "Privacy",
+    "privacyText": "Everything is stored only in your browser (local storage). There are no accounts, cookies, ads or trackers."
+  },
+  "dialog": {
+    "close": "Close"
+  }
+}
