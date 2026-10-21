@@ -1,3 +1,4 @@
+import { ModeIcon } from './ModeIcon';
 import { useEffect, useMemo, useState, type ReactNode } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
 import type { Monster } from '../data';
@@ -58,9 +59,7 @@ export function ModeShell({ mode, api, clue, board, aside, onGuess }: Props) {
     <article className={`mode mode-${mode}`}>
       <header className="mode-head">
         <h1>
-          <span className="mode-emoji" aria-hidden="true">
-            {MODES[mode].emoji}
-          </span>{' '}
+          <ModeIcon mode={mode} className="mode-emoji" />{' '}
           {t(`modes.${mode}.name`)}
         </h1>
         {api.isInfinite && <span className="pill">{t('win.infiniteBadge')}</span>}

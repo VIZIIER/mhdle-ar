@@ -55,6 +55,6 @@ So these values are best described as MHDLE's ratings, not official game data. T
 
 ## Other assets
 
-- **Fonts:** Cinzel, Reem Kufi and IBM Plex Sans Arabic (SIL Open Font License 1.1), bundled through @fontsource packages.
+- **Fonts:** Marcellus, Amiri and IBM Plex Sans Arabic (SIL Open Font License 1.1), bundled through @fontsource packages.
 - **Icons:** the favicon and interface icons are original inline SVG or Unicode.
 - **Monster tokens:** coloured initials, not artwork.

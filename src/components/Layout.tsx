@@ -4,7 +4,7 @@ import { useI18n } from '../i18n/I18nProvider';
 import { useAppState } from '../state/AppState';
 import { GameSelectDialog } from './GameSelectDialog';
 import { StatsDialog } from './StatsDialog';
-import { MODES } from '../games/modes';
+import { ModeIcon } from './ModeIcon';
 
 export function Layout() {
   const { t, lang, setLang } = useI18n();
@@ -48,7 +48,7 @@ export function Layout() {
           {modes.map((m) => (
             <li key={m}>
               <NavLink to={`/${m}`} className={({ isActive }) => `modetab${isActive ? ' active' : ''}${done.includes(m) ? ' done' : ''}`}>
-                <span aria-hidden="true">{MODES[m].emoji}</span> {t(`modes.${m}.name`)}
+                <ModeIcon mode={m} /> {t(`modes.${m}.name`)}
                 {done.includes(m) && <span className="tick" aria-label={t('home.cleared')}>✓</span>}
               </NavLink>
             </li>

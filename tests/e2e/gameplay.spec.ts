@@ -103,7 +103,7 @@ test.describe('gameplay', () => {
 
   test('game selection limits answers and search, and persists', async ({ page }) => {
     await start(page);
-    await page.locator('.home-actions .btn').first().click();
+    await page.locator('.home-actions .menu-item').first().click();
     const dialog = page.locator('dialog[open]');
     await dialog.locator('.check-all input').uncheck();
     await expect(dialog.locator('.btn-primary')).toBeDisabled();
@@ -132,7 +132,7 @@ test.describe('gameplay', () => {
 
   test('statistics dialog shows persisted values', async ({ page }) => {
     await start(page);
-    await page.locator('.home-actions .btn').nth(1).click();
+    await page.locator('.home-actions .menu-item').nth(1).click();
     await expect(page.locator('dialog[open] h2')).toHaveText("Hunter's record");
     await expect(page.locator('.stats-table tbody tr')).toHaveCount(2);
   });
