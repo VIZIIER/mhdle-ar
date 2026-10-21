@@ -57,9 +57,9 @@ The end-to-end tests do **not** use the dev server. `dist/` is built first (`npm
 | translations | uses English plural forms and interpolation | ✅ |
 | persistence | discards corrupted rounds instead of crashing | ✅ |
 | persistence | survives garbage in localStorage | ✅ |
-| threat levels | stay within the in-game 1–10 star scale | ✅ |
-| threat levels | uses the Hunter's Notes values researched for previously missing monsters | ✅ |
-| threat levels | does not invent a fixed threat for Wilds-only monsters (Wilds rates each encounter) | ✅ |
+| threat levels | every monster has one, within the 1–10 star scale | ✅ |
+| threat levels | follows the original MHDLE ratings | ✅ |
+| threat levels | falls back to the in-game value for the one monster MHDLE does not list | ✅ |
 
 ## End-to-end tests (`tests/e2e/`)
 
@@ -128,4 +128,4 @@ What these cover, against the brief's checklist:
 5. **Missing data shown grey on the winning row.** Missing values compared with themselves showed as "no data". Equal missing values now count as a match.
 6. **Corrupted saved data could crash a round.** Saved rounds are now validated when loaded.
 7. **Monsters with apostrophes were hard to find.** Typing "dahren" didn't find Dah'ren Mohran; the same applied to Safi'jiiva and Xeno'jiiva. An infinite-mode test hit this when one of them came up as the answer. Search now ignores apostrophes and spacing, and a new unit test checks that all 249 monsters are found by their English name, Arabic name and ID.
-8. **Wrong threat level for three Wilds monsters (found 21 October 2026).** Balahara, Doshaguma and Nu Udra showed threat 6. The wiki writes Wilds ratings as a per-encounter range (`★-★★★★★`), and the importer counted the stars. They now show "?"; a unit test guards against it.
+8. **Wrong threat level for three Wilds monsters (found 21 October 2026).** Balahara, Doshaguma and Nu Udra showed threat 6. The wiki writes Wilds ratings as a per-encounter range (`★-★★★★★`), and the importer counted the stars. They were set to "?", and then replaced by MHDLE's ratings (see DATA_SOURCES.md).

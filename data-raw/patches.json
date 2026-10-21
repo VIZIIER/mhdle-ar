@@ -165,5 +165,5 @@
     }
   },
   "firstAppearanceFallback": "When the wiki lead sentence names no game, the earliest main-series game in the monster's game list is used (affects collaboration and Wilds monsters whose lead sentence is phrased differently).",
-  "_threatNote": "Threat level = the star rating in a game's Hunter's Notes (MH3U, MH4/4U, MHGen/GU, MHRise/Sunbreak). Monster Hunter World/Iceborne has no such rating, and Wilds rates each encounter (1–5 stars) rather than each monster, so monsters only in those games keep threat = null (shown as '?')."
+  "_threatNote": "Threat levels shown in the game come from data-raw/threat-mhdle.json (the original MHDLE's ratings), for all monsters it lists. The 't' values here are the in-game Hunter's Notes ratings, kept for reference; they are only used for monsters MHDLE doesn't list (currently Yian Garuga uses the wiki value)."
 }

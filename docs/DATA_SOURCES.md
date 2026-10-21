@@ -26,7 +26,7 @@ Fields taken from each page:
 | Ailments | `Ailments` | Same filtering |
 | Weaknesses | `Weakest to` | Same filtering |
 | Max / Min size | `Monster Size` | Gold-crown large / small sizes in cm. Single-value pages use that value for both. Missing → "?" |
-| Threat level | In-game description blocks (`Threat Level N = ★…`) | Range of the star ratings recorded for MH3/3U, MH4/4U, MHGen/GU and MHRise/RS. Nine more were taken from the per-game Hunter's Notes pages on monsterhunterwiki.org (and Fextralife for Gaismagorm); each is listed in `data-raw/patches.json` with its URL. Monsters with no rated game stay "?" (61), see LIMITATIONS.md |
+| Threat level | `data-raw/threat-mhdle.json` | **Ratings from the original Monster Hunter DLE** (`monsters_en.json`, retrieved 2026-10-21) for 248 of 249 monsters, on its 1–10 scale, so the Classic column matches the original game. Yian Garuga (not listed by MHDLE) uses its in-game Hunter's Notes value from the wiki. The in-game values are kept for reference in `data-raw/patches.json` |
 | First appearance | Lead sentence ("introduced in …") | When absent, the earliest main-series game in the monster's categories (documented fallback) |
 | Generation | `Generation` | 1–6 |
 | Games | Page categories | Used for the game selection |
@@ -37,6 +37,15 @@ Fields taken from each page:
 - **Generated output:** `src/data/monsters.json`, shared under CC BY-SA 3.0.
 
 **Known limitations.** Values are as the wiki records them, and some vary between games. Where the source has no value, the game shows "?" and compares it as *no data* rather than guessing.
+
+## Threat levels from Monster Hunter DLE
+
+At the project owner's request, threat levels are taken from the original MHDLE dataset rather than from the games:
+
+- They differ from the in-game Hunter's Notes for most monsters. Of the 187 monsters with an in-game value, 45 match exactly, 40 overlap and 102 differ.
+- Monster Hunter World/Iceborne have no in-game monster rating at all, and Wilds rates each encounter (1–5 stars).
+
+So these values are best described as MHDLE's ratings, not official game data. The snapshot is `data-raw/threat-mhdle.json`; to update it, re-download `monsters_en.json` from the original site and regenerate the file.
 
 ## Written for this project (CC BY-SA 3.0)
 

@@ -2,6 +2,7 @@
 //   data-raw/wiki.json      – attributes extracted from the Monster Hunter Wiki (Fandom, CC BY-SA 3.0)
 //   data-raw/patches.json   – documented manual corrections
 //   data-raw/i18n-*.json    – Arabic names, Arabic nickname translations, original EN/AR descriptions
+//   data-raw/threat-mhdle.json – threat levels on Monster Hunter DLE's 1–10 scale (used for every monster it lists)
 // Run: npm run data:build   (then npm run data:validate)
 import { readFileSync, writeFileSync, readdirSync } from 'node:fs';
 import { dirname, join } from 'node:path';
@@ -12,6 +13,9 @@ const read = (p) => JSON.parse(readFileSync(join(root, p), 'utf8'));
 
 const wiki = read('data-raw/wiki.json');
 const { patches } = read('data-raw/patches.json');
+// Threat levels follow the original MHDLE's scale so the Classic column is consistent with the original game.
+// Monsters MHDLE doesn't list fall back to the in-game value from the wiki/patches.
+const { threat: threatMhdle } = read('data-raw/threat-mhdle.json');
 const { games } = read('src/data/games.json');
 const vocab = read('src/data/vocab.json');
 const i18n = Object.assign(
@@ -81,7 +85,11 @@ const monsters = wiki.map((raw) => {
     ailments: toIds(r.a, vocab.ailments, 'ailment', r.n),
     weaknesses: toIds(r.w, vocab.elements, 'weakness', r.n),
     size,
-    threat: r.t ? { min: r.t[0], max: r.t[1] } : null,
+    threat: threatMhdle[r.n]
+      ? { min: threatMhdle[r.n][0], max: threatMhdle[r.n][1] }
+      : r.t
+        ? { min: r.t[0], max: r.t[1] }
+        : null,
     firstGame: first,
     generation: r.g,
     games: gamesIds,
@@ -89,6 +97,7 @@ const monsters = wiki.map((raw) => {
   };
 }).filter(Boolean);
 
+for (const name of Object.keys(threatMhdle)) if (!wiki.find((w) => w.n === name)) errors.push(`MHDLE threat for unknown monster ${name}`);
 for (const name of Object.keys(i18n)) if (!wiki.find((w) => w.n === name)) errors.push(`Translation for unknown monster ${name}`);
 if (errors.length) { console.error(errors.join('\n')); process.exit(1); }
 

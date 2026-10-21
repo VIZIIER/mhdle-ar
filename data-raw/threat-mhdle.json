@@ -1,0 +1,997 @@
+{
+ "_source": "Threat levels as used by Monster Hunter DLE (https://monster-hunter-dle.akato.fr/monsters_en.json, field \"Threat level\"), retrieved 2026-10-21. Keys are this project's monster names; values are [min, max] stars. MHDLE uses its own consistent 1–10 rating; it differs from the in-game Hunter's Notes for many monsters, and World/Wilds have no in-game per-monster rating. Original MHDLE names mapped: Hermitaur Daimyo → Daimyo Hermitaur, Ceanataur Shogun → Shogun Ceanataur, Tigrex berserk → Brute Tigrex.",
+ "threat": {
+  "Basarios": [
+   4,
+   4
+  ],
+  "Azure Rathalos": [
+   7,
+   7
+  ],
+  "Akantor": [
+   8,
+   8
+  ],
+  "Black Diablos": [
+   7,
+   7
+  ],
+  "Blangonga": [
+   4,
+   4
+  ],
+  "Black Gravios": [
+   7,
+   7
+  ],
+  "Ashen Lao-Shan Lung": [
+   8,
+   9
+  ],
+  "Barroth": [
+   3,
+   4
+  ],
+  "Barioth": [
+   5,
+   6
+  ],
+  "Agnaktor": [
+   5,
+   6
+  ],
+  "Alatreon": [
+   7,
+   9
+  ],
+  "Arzuros": [
+   3,
+   3
+  ],
+  "Amatsu": [
+   8,
+   9
+  ],
+  "Baleful Gigginox": [
+   6,
+   6
+  ],
+  "Abyssal Lagiacrus": [
+   8,
+   8
+  ],
+  "Berserk Tetsucabra": [
+   5,
+   5
+  ],
+  "Ash Kecha Wacha": [
+   5,
+   5
+  ],
+  "Astalos": [
+   5,
+   6
+  ],
+  "Ahtal-Ka": [
+   8,
+   8
+  ],
+  "Anjanath": [
+   6,
+   6
+  ],
+  "Bazelgeuse": [
+   6,
+   7
+  ],
+  "Behemoth": [
+   8,
+   10
+  ],
+  "Ancient Leshen": [
+   8,
+   9
+  ],
+  "Banbaro": [
+   6,
+   6
+  ],
+  "Beotodus": [
+   5,
+   5
+  ],
+  "Acidic Glavenus": [
+   7,
+   7
+  ],
+  "Blackveil Vaal Hazak": [
+   8,
+   8
+  ],
+  "Aknosom": [
+   3,
+   3
+  ],
+  "Bishaten": [
+   4,
+   4
+  ],
+  "Almudron": [
+   6,
+   6
+  ],
+  "Apex Rathalos": [
+   8,
+   8
+  ],
+  "Apex Rathian": [
+   8,
+   8
+  ],
+  "Apex Mizutsune": [
+   8,
+   8
+  ],
+  "Apex Arzuros": [
+   7,
+   7
+  ],
+  "Apex Diablos": [
+   8,
+   8
+  ],
+  "Apex Zinogre": [
+   8,
+   8
+  ],
+  "Aurora Somnacanth": [
+   6,
+   6
+  ],
+  "Balahara": [
+   4,
+   5
+  ],
+  "Arkveld": [
+   7,
+   7
+  ],
+  "Ajarakan": [
+   6,
+   6
+  ],
+  "Blue Yian Kut-Ku": [
+   5,
+   5
+  ],
+  "Cephadrome": [
+   3,
+   3
+  ],
+  "Chameleos": [
+   7,
+   7
+  ],
+  "Fatalis": [
+   8,
+   10
+  ],
+  "Diablos": [
+   5,
+   6
+  ],
+  "Crimson Fatalis": [
+   8,
+   10
+  ],
+  "Bulldrome": [
+   3,
+   3
+  ],
+  "Daimyo Hermitaur": [
+   5,
+   5
+  ],
+  "Congalala": [
+   4,
+   4
+  ],
+  "Espinas": [
+   7,
+   7
+  ],
+  "Emerald Congalala": [
+   4,
+   4
+  ],
+  "Copper Blangonga": [
+   5,
+   5
+  ],
+  "Flaming Espinas": [
+   8,
+   8
+  ],
+  "Ceadeus": [
+   8,
+   8
+  ],
+  "Deviljho": [
+   6,
+   7
+  ],
+  "Brute Tigrex": [
+   7,
+   8
+  ],
+  "Crimson Qurupeco": [
+   5,
+   5
+  ],
+  "Duramboros": [
+   5,
+   6
+  ],
+  "Brachydios": [
+   6,
+   6
+  ],
+  "Dire Miralis": [
+   8,
+   8
+  ],
+  "Dah'ren Mohran": [
+   8,
+   9
+  ],
+  "Dalamadur": [
+   8,
+   8
+  ],
+  "Desert Seltas Queen": [
+   6,
+   6
+  ],
+  "Desert Seltas": [
+   4,
+   4
+  ],
+  "Chaotic Gore Magala": [
+   9,
+   10
+  ],
+  "Dreadking Rathalos": [
+   8,
+   8
+  ],
+  "Drilltusk Tetsucabra": [
+   6,
+   6
+  ],
+  "Dreadqueen Rathian": [
+   8,
+   8
+  ],
+  "Deadeye Yian Garuga": [
+   7,
+   7
+  ],
+  "Crystalbeard Uragaan": [
+   7,
+   7
+  ],
+  "Bloodbath Diablos": [
+   7,
+   7
+  ],
+  "Elderfrost Gammoth": [
+   7,
+   7
+  ],
+  "Boltreaver Astalos": [
+   7,
+   7
+  ],
+  "Dodogama": [
+   4,
+   4
+  ],
+  "Ebony Odogaron": [
+   7,
+   7
+  ],
+  "Coral Pukei-Pukei": [
+   5,
+   5
+  ],
+  "Crimson Glow Valstrax": [
+   8,
+   9
+  ],
+  "Blood Orange Bishaten": [
+   6,
+   6
+  ],
+  "Chatacabra": [
+   3,
+   3
+  ],
+  "Doshaguma": [
+   4,
+   5
+  ],
+  "Gypceros": [
+   4,
+   4
+  ],
+  "Hypnocatrice": [
+   3,
+   3
+  ],
+  "Gravios": [
+   5,
+   6
+  ],
+  "Gendrome": [
+   3,
+   3
+  ],
+  "Green Plesioth": [
+   7,
+   7
+  ],
+  "Iodrome": [
+   3,
+   3
+  ],
+  "Gold Rathian": [
+   8,
+   9
+  ],
+  "Giadrome": [
+   3,
+   3
+  ],
+  "Gobul": [
+   4,
+   4
+  ],
+  "Gigginox": [
+   4,
+   4
+  ],
+  "Great Baggi": [
+   3,
+   3
+  ],
+  "Great Jaggi": [
+   3,
+   3
+  ],
+  "Great Wroggi": [
+   3,
+   3
+  ],
+  "Green Nargacuga": [
+   7,
+   7
+  ],
+  "Glacial Agnaktor": [
+   7,
+   7
+  ],
+  "Ivory Lagiacrus": [
+   7,
+   7
+  ],
+  "Hallowed Jhen Mohran": [
+   8,
+   9
+  ],
+  "Goldbeard Ceadeus": [
+   8,
+   9
+  ],
+  "Gore Magala": [
+   7,
+   7
+  ],
+  "Gogmazios": [
+   8,
+   8
+  ],
+  "Furious Rajang": [
+   8,
+   9
+  ],
+  "Great Maccao": [
+   3,
+   3
+  ],
+  "Gammoth": [
+   5,
+   6
+  ],
+  "Glavenus": [
+   5,
+   6
+  ],
+  "Grimclaw Tigrex": [
+   7,
+   7
+  ],
+  "Hellblade Glavenus": [
+   7,
+   7
+  ],
+  "Great Jagras": [
+   4,
+   4
+  ],
+  "Great Girros": [
+   4,
+   4
+  ],
+  "Fulgur Anjanath": [
+   7,
+   7
+  ],
+  "Frostfang Barioth": [
+   7,
+   7
+  ],
+  "Great Izuchi": [
+   3,
+   3
+  ],
+  "Goss Harag": [
+   5,
+   6
+  ],
+  "Garangolm": [
+   6,
+   6
+  ],
+  "Gaismagorm": [
+   8,
+   8
+  ],
+  "Hirabami": [
+   5,
+   5
+  ],
+  "Guardian Doshaguma": [
+   7,
+   7
+  ],
+  "Guardian Rathalos": [
+   7,
+   7
+  ],
+  "Guardian Ebony Odogaron": [
+   7,
+   7
+  ],
+  "Guardian Arkveld": [
+   8,
+   8
+  ],
+  "Guardian Fulgur Anjanath": [
+   7,
+   7
+  ],
+  "Kirin": [
+   7,
+   7
+  ],
+  "Khezu": [
+   4,
+   4
+  ],
+  "Monoblos": [
+   5,
+   6
+  ],
+  "Lao-Shan Lung": [
+   8,
+   8
+  ],
+  "Kushala Daora": [
+   7,
+   7
+  ],
+  "Lunastra": [
+   7,
+   7
+  ],
+  "Lavasioth": [
+   4,
+   6
+  ],
+  "Nargacuga": [
+   4,
+   6
+  ],
+  "Lagiacrus": [
+   6,
+   6
+  ],
+  "King Shakalaka": [
+   3,
+   5
+  ],
+  "Jhen Mohran": [
+   8,
+   8
+  ],
+  "Lagombi": [
+   3,
+   3
+  ],
+  "Nibelsnarf": [
+   4,
+   4
+  ],
+  "Jade Barroth": [
+   6,
+   6
+  ],
+  "Lucent Nargacuga": [
+   8,
+   9
+  ],
+  "Kecha Wacha": [
+   3,
+   3
+  ],
+  "Nerscylla": [
+   4,
+   4
+  ],
+  "Najarala": [
+   4,
+   4
+  ],
+  "Molten Tigrex": [
+   7,
+   8
+  ],
+  "Mizutsune": [
+   5,
+   6
+  ],
+  "Malfestio": [
+   4,
+   4
+  ],
+  "Nakarkos": [
+   8,
+   8
+  ],
+  "Nightcloak Malfestio": [
+   5,
+   5
+  ],
+  "Kulu-Ya-Ku": [
+   3,
+   3
+  ],
+  "Jyuratodus": [
+   4,
+   4
+  ],
+  "Legiana": [
+   6,
+   6
+  ],
+  "Nergigante": [
+   7,
+   7
+  ],
+  "Odogaron": [
+   5,
+   6
+  ],
+  "Kulve Taroth": [
+   8,
+   8
+  ],
+  "Leshen": [
+   7,
+   7
+  ],
+  "Nightshade Paolumu": [
+   6,
+   6
+  ],
+  "Namielle": [
+   7,
+   8
+  ],
+  "Magnamalo": [
+   6,
+   6
+  ],
+  "Narwa the Allmother": [
+   9,
+   9
+  ],
+  "Malzeno": [
+   7,
+   7
+  ],
+  "Lunagaron": [
+   6,
+   6
+  ],
+  "Lala Barina": [
+   5,
+   5
+  ],
+  "Nu Udra": [
+   7,
+   7
+  ],
+  "Jin Dahaad": [
+   7,
+   7
+  ],
+  "Omega Planetes": [
+   8,
+   9
+  ],
+  "Rathalos": [
+   5,
+   6
+  ],
+  "Plesioth": [
+   5,
+   6
+  ],
+  "Rathian": [
+   4,
+   5
+  ],
+  "Red Khezu": [
+   6,
+   6
+  ],
+  "Pink Rathian": [
+   7,
+   7
+  ],
+  "Purple Gypceros": [
+   6,
+   6
+  ],
+  "Rajang": [
+   6,
+   7
+  ],
+  "Rusted Kushala Daora": [
+   7,
+   8
+  ],
+  "Qurupeco": [
+   3,
+   3
+  ],
+  "Royal Ludroth": [
+   4,
+   4
+  ],
+  "Plum Daimyo Hermitaur": [
+   5,
+   5
+  ],
+  "Purple Ludroth": [
+   6,
+   6
+  ],
+  "Sand Barioth": [
+   7,
+   7
+  ],
+  "Rust Duramboros": [
+   7,
+   7
+  ],
+  "Savage Deviljho": [
+   7,
+   8
+  ],
+  "Seltas": [
+   3,
+   3
+  ],
+  "Seltas Queen": [
+   5,
+   5
+  ],
+  "Ruby Basarios": [
+   7,
+   7
+  ],
+  "Oroshi Kirin": [
+   8,
+   8
+  ],
+  "Raging Brachydios": [
+   8,
+   9
+  ],
+  "Redhelm Arzuros": [
+   6,
+   6
+  ],
+  "Rustrazor Ceanataur": [
+   7,
+   7
+  ],
+  "Pukei-Pukei": [
+   4,
+   4
+  ],
+  "Paolumu": [
+   4,
+   4
+  ],
+  "Radobaan": [
+   5,
+   6
+  ],
+  "Ruiner Nergigante": [
+   8,
+   8
+  ],
+  "Seething Bazelgeuse": [
+   8,
+   8
+  ],
+  "Scarred Yian Garuga": [
+   5,
+   6
+  ],
+  "Safi'jiiva": [
+   8,
+   9
+  ],
+  "Rakna-Kadaki": [
+   5,
+   5
+  ],
+  "Pyre Rakna-Kadaki": [
+   7,
+   7
+  ],
+  "Scorned Magnamalo": [
+   8,
+   8
+  ],
+  "Risen Chameleos": [
+   9,
+   9
+  ],
+  "Risen Kushala Daora": [
+   9,
+   9
+  ],
+  "Risen Teostra": [
+   9,
+   9
+  ],
+  "Risen Crimson Glow Valstrax": [
+   10,
+   10
+  ],
+  "Risen Shagaru Magala": [
+   9,
+   10
+  ],
+  "Rey Dau": [
+   7,
+   7
+  ],
+  "Quematrice": [
+   4,
+   5
+  ],
+  "Rompopolo": [
+   5,
+   5
+  ],
+  "Velocidrome": [
+   3,
+   3
+  ],
+  "White Monoblos": [
+   7,
+   7
+  ],
+  "Tigrex": [
+   6,
+   6
+  ],
+  "Teostra": [
+   7,
+   7
+  ],
+  "White Fatalis": [
+   8,
+   10
+  ],
+  "Shen Gaoren": [
+   8,
+   8
+  ],
+  "Shogun Ceanataur": [
+   6,
+   6
+  ],
+  "Silver Rathalos": [
+   8,
+   9
+  ],
+  "Vespoid Queen": [
+   3,
+   3
+  ],
+  "Uragaan": [
+   5,
+   6
+  ],
+  "Ukanlos": [
+   8,
+   8
+  ],
+  "Terra Shogun Ceanataur": [
+   7,
+   7
+  ],
+  "Volvidon": [
+   4,
+   4
+  ],
+  "Steel Uragaan": [
+   7,
+   7
+  ],
+  "Stygian Zinogre": [
+   7,
+   7
+  ],
+  "Tetsucabra": [
+   3,
+   3
+  ],
+  "Shagaru Magala": [
+   8,
+   8
+  ],
+  "Seregios": [
+   5,
+   6
+  ],
+  "Tidal Najarala": [
+   6,
+   6
+  ],
+  "Tigerstripe Zamtrios": [
+   5,
+   5
+  ],
+  "Shrouded Nerscylla": [
+   6,
+   6
+  ],
+  "Shah Dalamadur": [
+   8,
+   9
+  ],
+  "Thunderlord Zinogre": [
+   8,
+   8
+  ],
+  "Silverwind Nargacuga": [
+   7,
+   7
+  ],
+  "Stonefist Hermitaur": [
+   6,
+   6
+  ],
+  "Snowbaron Lagombi": [
+   6,
+   6
+  ],
+  "Valstrax": [
+   6,
+   6
+  ],
+  "Soulseer Mizutsune": [
+   7,
+   7
+  ],
+  "Tobi-Kadachi": [
+   5,
+   5
+  ],
+  "Tzitzi-Ya-Ku": [
+   4,
+   4
+  ],
+  "Vaal Hazak": [
+   7,
+   7
+  ],
+  "Velkhana": [
+   8,
+   8
+  ],
+  "Shrieking Legiana": [
+   7,
+   7
+  ],
+  "Viper Tobi-Kadachi": [
+   6,
+   6
+  ],
+  "Shara Ishvalda": [
+   8,
+   8
+  ],
+  "Tetranadon": [
+   4,
+   4
+  ],
+  "Somnacanth": [
+   4,
+   4
+  ],
+  "Wind Serpent Ibushi": [
+   8,
+   8
+  ],
+  "Thunder Serpent Narwa": [
+   8,
+   8
+  ],
+  "Uth Duna": [
+   7,
+   7
+  ],
+  "Yian Kut-Ku": [
+   3,
+   3
+  ],
+  "Yama Tsukami": [
+   8,
+   8
+  ],
+  "Zinogre": [
+   6,
+   6
+  ],
+  "Zamtrios": [
+   4,
+   4
+  ],
+  "Zorah Magdaros": [
+   8,
+   8
+  ],
+  "Xeno'jiiva": [
+   8,
+   8
+  ],
+  "Zoh Shia": [
+   8,
+   8
+  ],
+  "Xu Wu": [
+   7,
+   7
+  ]
+ }
+}

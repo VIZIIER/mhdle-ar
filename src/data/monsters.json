@@ -39,8 +39,8 @@
     "max": 3969.3
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -78,7 +78,10 @@
     "min": null,
     "max": null
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -121,7 +124,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -213,7 +216,10 @@
     "min": 1047.92,
     "max": 1455.44
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -261,8 +267,8 @@
     "max": 3049
    },
    "threat": {
-    "min": 6,
-    "max": 7
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhf2",
    "generation": 2,
@@ -314,8 +320,8 @@
     "max": 1043.75
    },
    "threat": {
-    "min": 2,
-    "max": 2
+    "min": 3,
+    "max": 3
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -366,8 +372,8 @@
     "max": 3105
    },
    "threat": {
-    "min": 6,
-    "max": 8
+    "min": 7,
+    "max": 9
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -419,8 +425,8 @@
     "max": 3368.12
    },
    "threat": {
-    "min": 7,
-    "max": 7
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -470,7 +476,7 @@
    },
    "threat": {
     "min": 8,
-    "max": 10
+    "max": 9
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -507,7 +513,10 @@
     "min": 633.81,
     "max": 633.81
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 9
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -597,8 +606,8 @@
     "max": null
    },
    "threat": {
-    "min": 8,
-    "max": 8
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -629,8 +638,8 @@
     "max": 2838.67
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -673,8 +682,8 @@
     "max": 2506.31
    },
    "threat": {
-    "min": 9,
-    "max": 9
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -713,8 +722,8 @@
     "max": 2305.8
    },
    "threat": {
-    "min": 9,
-    "max": 9
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -800,8 +809,8 @@
     "max": null
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -846,7 +855,10 @@
     "min": 1483.22,
     "max": 2083.17
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -887,7 +899,7 @@
     "max": 854.55
    },
    "threat": {
-    "min": 1,
+    "min": 3,
     "max": 3
    },
    "firstGame": "mhp3",
@@ -936,8 +948,8 @@
     "max": 1329.15
    },
    "threat": {
-    "min": 3,
-    "max": 3
+    "min": 5,
+    "max": 5
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -976,7 +988,10 @@
     "min": 6960,
     "max": 6960
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 9
+   },
    "firstGame": "mhg",
    "generation": 1,
    "games": [
@@ -1028,7 +1043,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 7
+    "max": 6
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -1123,8 +1138,8 @@
     "max": 2248.6
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -1173,7 +1188,10 @@
     "min": 1702.22,
     "max": 2371.64
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 5
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -1214,8 +1232,8 @@
     "max": 1266.7
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -1257,7 +1275,10 @@
     "min": null,
     "max": null
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -1304,7 +1325,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -1413,7 +1434,7 @@
     "max": 1754.6
    },
    "threat": {
-    "min": 3,
+    "min": 4,
     "max": 4
    },
    "firstGame": "mh1",
@@ -1471,8 +1492,8 @@
     "max": 2410.48
    },
    "threat": {
-    "min": 8,
-    "max": 8
+    "min": 6,
+    "max": 7
    },
    "firstGame": "mhw",
    "generation": 5,
@@ -1520,7 +1541,10 @@
     "min": 3423.65,
     "max": 3423.65
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 10
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -1561,7 +1585,10 @@
     "min": 1945.78,
     "max": 2044.26
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -1600,8 +1627,8 @@
     "max": 1582.25
    },
    "threat": {
-    "min": 3,
-    "max": 3
+    "min": 5,
+    "max": 5
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -1688,8 +1715,8 @@
     "max": 2930.3
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -1740,8 +1767,8 @@
     "max": 3065.9
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -1786,7 +1813,10 @@
     "min": null,
     "max": null
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -1922,8 +1952,8 @@
     "max": 2770.75
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgu",
    "generation": 4,
@@ -1965,8 +1995,8 @@
     "max": 1195.7
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 5,
+    "max": 5
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -2019,8 +2049,8 @@
     "max": 2441.36
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgu",
    "generation": 4,
@@ -2066,8 +2096,8 @@
     "max": 1932.69
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -2109,8 +2139,8 @@
     "max": 2169.38
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 8
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -2200,8 +2230,8 @@
     "max": 5837.2
    },
    "threat": {
-    "min": 5,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -2301,8 +2331,8 @@
     "max": 2811.32
    },
    "threat": {
-    "min": 6,
-    "max": 8
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh2",
    "generation": 2,
@@ -2353,7 +2383,7 @@
     "max": 2165.9
    },
    "threat": {
-    "min": 10,
+    "min": 9,
     "max": 10
    },
    "firstGame": "mh4u",
@@ -2394,7 +2424,10 @@
     "min": 443.48,
     "max": 617.89
    },
-   "threat": null,
+   "threat": {
+    "min": 3,
+    "max": 3
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -2484,7 +2517,10 @@
     "min": 799.8,
     "max": 1221.2
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhfu",
    "generation": 2,
    "games": [
@@ -2523,7 +2559,10 @@
     "min": null,
     "max": null
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -2566,8 +2605,8 @@
     "max": 4110.6
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 10
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -2622,8 +2661,8 @@
     "max": 2551.22
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 8,
+    "max": 9
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -2667,8 +2706,8 @@
     "max": 1085.4
    },
    "threat": {
-    "min": 3,
-    "max": 3
+    "min": 5,
+    "max": 5
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -2717,8 +2756,8 @@
     "max": 2920.21
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -2757,8 +2796,8 @@
     "max": 11446.5
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 9
    },
    "firstGame": "mh4",
    "generation": 4,
@@ -2804,7 +2843,7 @@
     "max": 1451.2
    },
    "threat": {
-    "min": 3,
+    "min": 5,
     "max": 5
    },
    "firstGame": "mh2",
@@ -2851,8 +2890,8 @@
     "max": 44039.7
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh4",
    "generation": 4,
@@ -2902,8 +2941,8 @@
     "max": 1482.91
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -2944,8 +2983,8 @@
     "max": 766.63
    },
    "threat": {
-    "min": 3,
-    "max": 3
+    "min": 4,
+    "max": 4
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -2990,8 +3029,8 @@
     "max": 2291.87
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -3039,7 +3078,7 @@
    },
    "threat": {
     "min": 6,
-    "max": 6
+    "max": 7
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -3089,7 +3128,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 7
+    "max": 6
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -3145,8 +3184,8 @@
     "max": 6288
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -3184,7 +3223,10 @@
     "min": 977.78,
     "max": 2000
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 4
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -3221,7 +3263,10 @@
     "min": 1237.51,
     "max": 1807.61
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 5
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -3267,8 +3312,8 @@
     "max": 2263.56
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -3318,8 +3363,8 @@
     "max": 2261.25
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -3366,8 +3411,8 @@
     "max": 1649.07
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -3408,7 +3453,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -3452,7 +3497,10 @@
     "min": 1249.88,
     "max": 1722.05
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -3498,8 +3546,8 @@
     "max": null
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgu",
    "generation": 4,
@@ -3645,8 +3693,8 @@
     "max": 4137.17
    },
    "threat": {
-    "min": 6,
-    "max": 8
+    "min": 8,
+    "max": 10
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -3702,8 +3750,8 @@
     "max": 2812
    },
    "threat": {
-    "min": 9,
-    "max": 9
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhfrontier",
    "generation": 5,
@@ -3745,7 +3793,10 @@
     "min": null,
     "max": null
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -3785,7 +3836,10 @@
     "min": 1481.81,
     "max": 2008.68
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -3832,7 +3886,7 @@
     "max": 1188.18
    },
    "threat": {
-    "min": 9,
+    "min": 8,
     "max": 9
    },
    "firstGame": "mhfu",
@@ -3885,8 +3939,8 @@
     "max": 4807.54
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrs",
    "generation": 5,
@@ -3935,7 +3989,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -4162,8 +4216,8 @@
     "max": 3176.2
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -4212,7 +4266,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -4305,8 +4359,8 @@
     "max": 4920.5
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -4355,7 +4409,7 @@
     "max": 2303.8
    },
    "threat": {
-    "min": 5,
+    "min": 8,
     "max": 9
    },
    "firstGame": "mhg",
@@ -4410,8 +4464,8 @@
     "max": 5837.2
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 9
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -4457,7 +4511,7 @@
     "max": 2201.12
    },
    "threat": {
-    "min": 5,
+    "min": 7,
     "max": 7
    },
    "firstGame": "mh4",
@@ -4511,8 +4565,8 @@
     "max": null
    },
    "threat": {
-    "min": 7,
-    "max": 7
+    "min": 5,
+    "max": 6
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -4557,7 +4611,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -4609,7 +4663,7 @@
     "max": 1457.97
    },
    "threat": {
-    "min": 1,
+    "min": 3,
     "max": 3
    },
    "firstGame": "mh3",
@@ -4653,7 +4707,10 @@
     "min": 937.3,
     "max": 1316.44
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 4
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -4695,8 +4752,8 @@
     "max": null
    },
    "threat": {
-    "min": 1,
-    "max": 1
+    "min": 3,
+    "max": 3
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -4775,7 +4832,10 @@
     "min": 277.42,
     "max": 1997.39
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 4
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -4857,7 +4917,7 @@
     "max": 1168.13
    },
    "threat": {
-    "min": 2,
+    "min": 3,
     "max": 3
    },
    "firstGame": "mhp3",
@@ -4901,8 +4961,8 @@
     "max": 2002.88
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -4946,8 +5006,8 @@
     "max": 3877.9
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -4997,8 +5057,8 @@
     "max": 2333.21
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -5039,7 +5099,10 @@
     "min": null,
     "max": 1666.54
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -5079,7 +5142,10 @@
     "min": 1251.42,
     "max": 1724.18
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -5119,7 +5185,10 @@
     "min": 1222.1,
     "max": 1722.05
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -5160,7 +5229,10 @@
     "min": 1465.34,
     "max": 2058.07
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -5201,7 +5273,10 @@
     "min": 1533.79,
     "max": 2130.27
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -5241,8 +5316,8 @@
     "max": 1348.2
    },
    "threat": {
-    "min": 3,
-    "max": 3
+    "min": 4,
+    "max": 4
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -5289,8 +5364,8 @@
     "max": 11161.9
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 9
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -5337,8 +5412,8 @@
     "max": 3409.02
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -5379,7 +5454,10 @@
     "min": 1476.81,
     "max": 1908.24
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -5416,7 +5494,10 @@
     "min": 751.4,
     "max": 1485.8
    },
-   "threat": null,
+   "threat": {
+    "min": 3,
+    "max": 3
+   },
    "firstGame": "mhfrontier",
    "generation": 2,
    "games": [
@@ -5504,8 +5585,8 @@
     "max": 3310.6
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -5548,8 +5629,8 @@
     "max": 1744.31
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -5588,8 +5669,8 @@
     "max": 11161.9
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -5636,7 +5717,10 @@
     "min": null,
     "max": 4560.89
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -5779,7 +5863,7 @@
     "max": 1225.5
    },
    "threat": {
-    "min": 2,
+    "min": 4,
     "max": 4
    },
    "firstGame": "mh1",
@@ -5831,7 +5915,10 @@
     "min": null,
     "max": null
    },
-   "threat": null,
+   "threat": {
+    "min": 3,
+    "max": 5
+   },
    "firstGame": "mh2",
    "generation": 2,
    "games": [
@@ -5874,8 +5961,8 @@
     "max": 989.64
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -5930,8 +6017,8 @@
     "max": 1126.55
    },
    "threat": {
-    "min": 2,
-    "max": 2
+    "min": 3,
+    "max": 3
    },
    "firstGame": "mhw",
    "generation": 5,
@@ -5979,7 +6066,10 @@
     "min": 4573.25,
     "max": 4573.25
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -6023,8 +6113,8 @@
     "max": 2391.41
    },
    "threat": {
-    "min": 6,
-    "max": 8
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh2",
    "generation": 2,
@@ -6082,8 +6172,8 @@
     "max": 3310.6
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -6134,7 +6224,7 @@
     "max": 1581.9
    },
    "threat": {
-    "min": 1,
+    "min": 3,
     "max": 3
    },
    "firstGame": "mhp3",
@@ -6180,7 +6270,10 @@
     "min": 621.88,
     "max": 866.44
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -6222,8 +6315,8 @@
     "max": 6960
    },
    "threat": {
-    "min": 7,
-    "max": 7
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -6271,7 +6364,7 @@
    },
    "threat": {
     "min": 4,
-    "max": 4
+    "max": 6
    },
    "firstGame": "mhfrontier",
    "generation": 2,
@@ -6316,7 +6409,10 @@
     "min": 1495.78,
     "max": 2124.69
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -6349,7 +6445,10 @@
     "min": 549.7,
     "max": 549.7
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -6394,7 +6493,7 @@
     "max": 2503.8
    },
    "threat": {
-    "min": 9,
+    "min": 8,
     "max": 9
    },
    "firstGame": "mh3u",
@@ -6444,8 +6543,8 @@
     "max": 1739.5
    },
    "threat": {
-    "min": 7,
-    "max": 7
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhrs",
    "generation": 5,
@@ -6487,7 +6586,10 @@
     "min": 1444.2,
     "max": 2575.2
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mh2",
    "generation": 2,
    "games": [
@@ -6534,8 +6636,8 @@
     "max": 2276.11
    },
    "threat": {
-    "min": 7,
-    "max": 7
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -6624,8 +6726,8 @@
     "max": 2477.15
    },
    "threat": {
-    "min": 8,
-    "max": 8
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhrs",
    "generation": 5,
@@ -6718,8 +6820,8 @@
     "max": 2313.9
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 8
    },
    "firstGame": "mh4",
    "generation": 4,
@@ -6759,7 +6861,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -6902,7 +7004,10 @@
     "min": 1822.94,
     "max": 2560.31
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 8
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -6999,8 +7104,8 @@
     "max": 3875.05
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 9,
+    "max": 9
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -7037,7 +7142,10 @@
     "min": 1626.35,
     "max": 2310.14
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -7210,7 +7318,10 @@
     "min": 1006.16,
     "max": 1406.33
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -7253,7 +7364,10 @@
     "min": 1884.32,
     "max": 2386.81
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -7291,7 +7405,10 @@
     "min": 541.61,
     "max": 1735.94
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 6
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -7329,7 +7446,10 @@
     "min": null,
     "max": 1181.85
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 9
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -7371,8 +7491,8 @@
     "max": 989.64
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mh4",
    "generation": 4,
@@ -7410,7 +7530,10 @@
     "min": 1006.16,
     "max": 1429.2
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 4
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -7454,8 +7577,8 @@
     "max": 2303.8
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -7507,8 +7630,8 @@
     "max": 3877.9
    },
    "threat": {
-    "min": 4,
-    "max": 5
+    "min": 5,
+    "max": 6
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -7558,8 +7681,8 @@
     "max": 1346.8
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 5,
+    "max": 5
    },
    "firstGame": "mhfu",
    "generation": 2,
@@ -7650,8 +7773,8 @@
     "max": 1348.2
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -7698,8 +7821,8 @@
     "max": 1939.5
    },
    "threat": {
-    "min": 3,
-    "max": 3
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -7790,7 +7913,10 @@
     "min": 1107.3,
     "max": 1542.76
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 5
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -7874,7 +8000,10 @@
     "min": 1587.05,
     "max": 2182.2
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 6
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -7911,8 +8040,8 @@
     "max": 2130.5
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 8,
+    "max": 9
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -7960,7 +8089,7 @@
    },
    "threat": {
     "min": 6,
-    "max": 8
+    "max": 7
    },
    "firstGame": "mh2",
    "generation": 2,
@@ -8016,8 +8145,8 @@
     "max": 1071.16
    },
    "threat": {
-    "min": 7,
-    "max": 7
+    "min": 5,
+    "max": 5
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -8135,7 +8264,7 @@
    },
    "threat": {
     "min": 4,
-    "max": 4
+    "max": 5
    },
    "firstGame": "mh1",
    "generation": 1,
@@ -8198,8 +8327,8 @@
     "max": 1205
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -8249,8 +8378,8 @@
     "max": 904.57
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -8296,7 +8425,10 @@
     "min": 1851.37,
     "max": 2571.35
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -8334,8 +8466,8 @@
     "max": 2811.32
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 9,
+    "max": 9
    },
    "firstGame": "mhrs",
    "generation": 5,
@@ -8419,8 +8551,8 @@
     "max": 2388.52
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 9,
+    "max": 9
    },
    "firstGame": "mhrs",
    "generation": 5,
@@ -8457,7 +8589,7 @@
     "max": 2030.58
    },
    "threat": {
-    "min": 10,
+    "min": 9,
     "max": 10
    },
    "firstGame": "mhrs",
@@ -8497,8 +8629,8 @@
     "max": 2201.88
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 9,
+    "max": 9
    },
    "firstGame": "mhrs",
    "generation": 5,
@@ -8537,7 +8669,10 @@
     "min": 1066.05,
     "max": 1497.27
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -8582,8 +8717,8 @@
     "max": 1931.5
    },
    "threat": {
-    "min": 3,
-    "max": 3
+    "min": 4,
+    "max": 4
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -8634,8 +8769,8 @@
     "max": 1783.13
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh4",
    "generation": 4,
@@ -8674,7 +8809,10 @@
     "min": 1663.31,
     "max": 2310.15
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -8713,8 +8851,8 @@
     "max": 4454.84
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -8756,8 +8894,8 @@
     "max": 2129
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 8
    },
    "firstGame": "mh2",
    "generation": 2,
@@ -8804,8 +8942,8 @@
     "max": null
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgu",
    "generation": 4,
@@ -8847,7 +8985,10 @@
     "min": 4799.78,
     "max": 4799.78
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 9
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -8884,8 +9025,8 @@
     "max": 2277.13
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -8924,8 +9065,8 @@
     "max": 4097.8
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 8
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -8975,7 +9116,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mhf1",
    "generation": 1,
@@ -9020,8 +9161,8 @@
     "max": 2343.47
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrs",
    "generation": 5,
@@ -9067,8 +9208,8 @@
     "max": null
    },
    "threat": {
-    "min": 9,
-    "max": 9
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhwi",
    "generation": 5,
@@ -9208,7 +9349,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 7
+    "max": 6
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -9257,7 +9398,7 @@
     "max": 2187.06
    },
    "threat": {
-    "min": 6,
+    "min": 8,
     "max": 8
    },
    "firstGame": "mh4",
@@ -9304,8 +9445,8 @@
     "max": 44039.7
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 9
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -9347,7 +9488,10 @@
     "min": 2910.91,
     "max": 2910.91
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -9383,7 +9527,10 @@
     "min": 3388,
     "max": 3388
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mh2",
    "generation": 2,
    "games": [
@@ -9431,8 +9578,8 @@
     "max": 1294.5
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mh2",
    "generation": 2,
@@ -9479,7 +9626,10 @@
     "min": 1529.78,
     "max": 2252.98
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -9521,8 +9671,8 @@
     "max": 1188.69
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -9570,7 +9720,7 @@
     "max": 2248.6
    },
    "threat": {
-    "min": 5,
+    "min": 8,
     "max": 9
    },
    "firstGame": "mhg",
@@ -9628,8 +9778,8 @@
     "max": 2127.91
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -9678,8 +9828,8 @@
     "max": 799.36
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -9727,8 +9877,8 @@
     "max": 1899.97
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 4,
+    "max": 4
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -9774,8 +9924,8 @@
     "max": 2792.77
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhgu",
    "generation": 4,
@@ -9818,8 +9968,8 @@
     "max": 3449
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhp3",
    "generation": 3,
@@ -9865,8 +10015,8 @@
     "max": 1793.68
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -9912,8 +10062,8 @@
     "max": 1887
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh3u",
    "generation": 3,
@@ -9964,8 +10114,8 @@
     "max": 2610
    },
    "threat": {
-    "min": 6,
-    "max": 8
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mh2",
    "generation": 2,
@@ -10014,7 +10164,10 @@
     "min": 742.2,
     "max": 1294.5
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhfu",
    "generation": 2,
    "games": [
@@ -10060,8 +10213,8 @@
     "max": 1206.23
    },
    "threat": {
-    "min": 2,
-    "max": 2
+    "min": 4,
+    "max": 4
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -10156,8 +10309,8 @@
     "max": 3875.05
    },
    "threat": {
-    "min": 10,
-    "max": 10
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -10204,8 +10357,8 @@
     "max": 1918.07
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhgen",
    "generation": 4,
@@ -10249,8 +10402,8 @@
     "max": 5271.5
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -10293,8 +10446,8 @@
     "max": 1899.5
    },
    "threat": {
-    "min": 4,
-    "max": 4
+    "min": 5,
+    "max": 5
    },
    "firstGame": "mh4u",
    "generation": 4,
@@ -10340,8 +10493,8 @@
     "max": 2914.8
    },
    "threat": {
-    "min": 5,
-    "max": 7
+    "min": 6,
+    "max": 6
    },
    "firstGame": "mhf2",
    "generation": 2,
@@ -10438,7 +10591,10 @@
     "min": 786.76,
     "max": 1117.55
    },
-   "threat": null,
+   "threat": {
+    "min": 4,
+    "max": 4
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -10485,8 +10641,8 @@
     "max": 3188
    },
    "threat": {
-    "min": 6,
-    "max": 7
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhfu",
    "generation": 2,
@@ -10534,7 +10690,7 @@
    },
    "threat": {
     "min": 5,
-    "max": 5
+    "max": 6
    },
    "firstGame": "mh3",
    "generation": 3,
@@ -10580,7 +10736,10 @@
     "min": 2681.36,
     "max": 3426.18
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -10622,7 +10781,10 @@
     "min": 1843.95,
     "max": 2598.3
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -10719,8 +10881,8 @@
     "max": 3245.06
    },
    "threat": {
-    "min": 9,
-    "max": 9
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhwi",
    "generation": 5,
@@ -10804,7 +10966,10 @@
     "min": 691,
     "max": 691
    },
-   "threat": null,
+   "threat": {
+    "min": 3,
+    "max": 3
+   },
    "firstGame": "mhfu",
    "generation": 2,
    "games": [
@@ -10844,7 +11009,10 @@
     "min": null,
     "max": null
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mhwi",
    "generation": 5,
    "games": [
@@ -10937,8 +11105,8 @@
     "max": 4119.2
    },
    "threat": {
-    "min": 6,
-    "max": 6
+    "min": 8,
+    "max": 10
    },
    "firstGame": "mh2",
    "generation": 2,
@@ -10979,8 +11147,8 @@
     "max": 2810.7
    },
    "threat": {
-    "min": 5,
-    "max": 5
+    "min": 7,
+    "max": 7
    },
    "firstGame": "mhg",
    "generation": 1,
@@ -11031,8 +11199,8 @@
     "max": 3068.6
    },
    "threat": {
-    "min": 9,
-    "max": 9
+    "min": 8,
+    "max": 8
    },
    "firstGame": "mhrise",
    "generation": 5,
@@ -11079,7 +11247,10 @@
     "min": 4509.1,
     "max": 4509.1
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [
@@ -11119,7 +11290,10 @@
     "min": 1242.7,
     "max": 1745.37
    },
-   "threat": null,
+   "threat": {
+    "min": 7,
+    "max": 7
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -11163,7 +11337,10 @@
     "min": 4137,
     "max": 4137
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mh2",
    "generation": 2,
    "games": [
@@ -11367,7 +11544,7 @@
     "max": 2144.49
    },
    "threat": {
-    "min": 5,
+    "min": 6,
     "max": 6
    },
    "firstGame": "mhp3",
@@ -11418,7 +11595,10 @@
     "min": null,
     "max": 4623.59
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -11459,7 +11639,10 @@
     "min": 25764.59,
     "max": 25764.59
    },
-   "threat": null,
+   "threat": {
+    "min": 8,
+    "max": 8
+   },
    "firstGame": "mhw",
    "generation": 5,
    "games": [

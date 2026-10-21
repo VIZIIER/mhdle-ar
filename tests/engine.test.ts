@@ -225,21 +225,22 @@ describe('persistence', () => {
 });
 
 describe('threat levels', () => {
-  it('stay within the in-game 1–10 star scale', () => {
-    for (const x of MONSTERS) if (x.threat) {
-      expect(x.threat.min).toBeGreaterThanOrEqual(1);
-      expect(x.threat.max).toBeLessThanOrEqual(10);
-      expect(x.threat.min).toBeLessThanOrEqual(x.threat.max);
+  it('every monster has one, within the 1–10 star scale', () => {
+    for (const x of MONSTERS) {
+      expect(x.threat, x.id).not.toBeNull();
+      expect(x.threat!.min).toBeGreaterThanOrEqual(1);
+      expect(x.threat!.max).toBeLessThanOrEqual(10);
+      expect(x.threat!.min).toBeLessThanOrEqual(x.threat!.max);
     }
   });
-  it('uses the Hunter\'s Notes values researched for previously missing monsters', () => {
+  it('follows the original MHDLE ratings', () => {
     const t = (id: string) => m(id).threat;
-    expect(t('gaismagorm')).toEqual({ min: 10, max: 10 });
-    expect(t('abyssal-lagiacrus')).toEqual({ min: 6, max: 6 });
-    expect(t('sand-barioth')).toEqual({ min: 5, max: 5 });
-    expect(t('savage-deviljho')).toEqual(t('deviljho'));
+    expect(t('rathalos')).toEqual({ min: 5, max: 6 });
+    expect(t('behemoth')).toEqual({ min: 8, max: 10 });
+    expect(t('balahara')).toEqual({ min: 4, max: 5 });
+    expect(t('brute-tigrex')).toEqual({ min: 7, max: 8 }); // listed as "Tigrex berserk" in MHDLE
   });
-  it('does not invent a fixed threat for Wilds-only monsters (Wilds rates each encounter)', () => {
-    for (const id of ['balahara', 'doshaguma', 'nu-udra', 'rey-dau', 'arkveld']) expect(m(id).threat).toBeNull();
+  it('falls back to the in-game value for the one monster MHDLE does not list', () => {
+    expect(m('yian-garuga').threat).toEqual({ min: 5, max: 5 });
   });
 });

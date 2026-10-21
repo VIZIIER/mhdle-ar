@@ -13,12 +13,7 @@ Both modes are fully implemented and were tested with placeholder media (see [TE
 ## Data gaps
 
 - **Roster:** 249 large monsters from the 18 main-series games. Small monsters, Frontier-only and spin-off-only monsters (the original lists 330 entries) are out of scope, so the original's "Disable small monsters" option isn't needed.
-- **Threat level:** missing ("?") for **61** monsters. This is not missing research. The games these monsters come from don't have a per-monster threat rating:
-  - **Monster Hunter: World / Iceborne** (32 monsters, including Lunastra) has no threat stars in its Hunter's Notes. Only quests have stars, and tempered monsters have a separate 1–3 tempered level.
-  - **Monster Hunter Wilds** (21 monsters) rates each *encounter* from 1 to 5 stars rather than each monster. Apex monsters and Arkveld range from 3 to 5, and Zoh Shia is always 5.
-  - **Gen 1–2 only monsters** (8, e.g. Yama Tsukami, Shen Gaoren, Hypnocatrice) come from games without a threat rating.
-
-  Values that do exist were filled from each game's Hunter's Notes (see `data-raw/patches.json`, each with its source). The original MHDLE shows numbers for these monsters, but they can't be traced to any game and appear to be its author's own estimates, so they are not used.
+- **Threat level:** every monster now has one. The values are the **original MHDLE's ratings** (see [DATA_SOURCES.md](DATA_SOURCES.md#threat-levels-from-monster-hunter-dle)), not the in-game Hunter's Notes stars, which they often differ from. World/Iceborne monsters have no in-game rating, and Wilds rates each encounter rather than each monster. Yian Garuga isn't in MHDLE's list, so it uses its in-game value (5).
 - **Size:** missing or partial for **27** monsters, shown as "?".
 - **Apex Diablos weaknesses:** listed as "?" by the source, shown as "?".
 - **Per-game differences:** values follow the wiki infobox. Monsters whose elements, ailments or weaknesses changed between games show the wiki's combined list, minus spin-off-only and terrain/food-dependent entries.

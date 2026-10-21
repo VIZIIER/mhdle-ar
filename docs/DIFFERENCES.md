@@ -9,6 +9,7 @@ Everything listed in `FEATURE_INVENTORY.md` is implemented. These are the places
 | Surveyor / Roar media | Capcom renders and roars bundled | No media shipped; modes appear when files are added | Media is Capcom's property |
 | Daily pick | Hash of the date plus an offset; the "no repeat in 30 days" history was ineffective | Seeded shuffle per cycle: no monster repeats until the whole pool has been used | Implements the intended behaviour reliably |
 | Sizes | Strings with mixed formats, compared with `parseInt` | Numbers in cm, compared exactly | Fixes silent truncation |
+| Threat level | Its own 1–10 ratings | The same ratings, copied from MHDLE's data (248/249 monsters) | Classic comparisons behave like the original |
 | Missing data | Shown as "none" or compared as 0 | Shown as "?" (grey "no data" tile) | Avoids presenting a missing value as a fact |
 | Visual assets | Capcom landscape backgrounds, logo, mode icons, OptimusPrinceps font | Same hierarchy (title → game choices → framed message → stacked mode buttons; framed dark table; parchment panels; gold accents) built from original CSS, Unicode icons and OFL fonts (Cinzel, Reem Kufi, IBM Plex Sans Arabic) | The original's images are not licensed for reuse |
 | Search position | Search box below the Classic table | Search box above the grid | Keeps input next to the newest row on phones |
