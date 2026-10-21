@@ -13,7 +13,7 @@ Both modes are fully implemented and were tested with placeholder media (see [TE
 ## Data gaps
 
 - **Roster:** 249 large monsters from the 18 main-series games. Small monsters, Frontier-only and spin-off-only monsters (the original lists 330 entries) are out of scope, so the original's "Disable small monsters" option isn't needed.
-- **Threat level:** missing for **67** monsters, mostly MH World / Iceborne and Wilds, where the wiki records no in-game star rating. Shown as "?" and compared as "no data".
+- **Threat level:** every monster now has one. The values are the **original MHDLE's ratings** (see [DATA_SOURCES.md](DATA_SOURCES.md#threat-levels-from-monster-hunter-dle)), not the in-game Hunter's Notes stars, which they often differ from. World/Iceborne monsters have no in-game rating, and Wilds rates each encounter rather than each monster. Yian Garuga isn't in MHDLE's list, so it uses its in-game value (5).
 - **Size:** missing or partial for **27** monsters, shown as "?".
 - **Apex Diablos weaknesses:** listed as "?" by the source, shown as "?".
 - **Per-game differences:** values follow the wiki infobox. Monsters whose elements, ailments or weaknesses changed between games show the wiki's combined list, minus spin-off-only and terrain/food-dependent entries.

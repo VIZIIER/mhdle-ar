@@ -223,3 +223,24 @@ describe('persistence', () => {
     localStorage.clear();
   });
 });
+
+describe('threat levels', () => {
+  it('every monster has one, within the 1–10 star scale', () => {
+    for (const x of MONSTERS) {
+      expect(x.threat, x.id).not.toBeNull();
+      expect(x.threat!.min).toBeGreaterThanOrEqual(1);
+      expect(x.threat!.max).toBeLessThanOrEqual(10);
+      expect(x.threat!.min).toBeLessThanOrEqual(x.threat!.max);
+    }
+  });
+  it('follows the original MHDLE ratings', () => {
+    const t = (id: string) => m(id).threat;
+    expect(t('rathalos')).toEqual({ min: 5, max: 6 });
+    expect(t('behemoth')).toEqual({ min: 8, max: 10 });
+    expect(t('balahara')).toEqual({ min: 4, max: 5 });
+    expect(t('brute-tigrex')).toEqual({ min: 7, max: 8 }); // listed as "Tigrex berserk" in MHDLE
+  });
+  it('falls back to the in-game value for the one monster MHDLE does not list', () => {
+    expect(m('yian-garuga').threat).toEqual({ min: 5, max: 5 });
+  });
+});
