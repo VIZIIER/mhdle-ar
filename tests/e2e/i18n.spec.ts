@@ -37,9 +37,6 @@ async function arabicLeaks(page: Page): Promise<string[]> {
   });
 }
 
-/** Folder and file names in the media setup instructions are intentionally left in Latin script. */
-const FILE_WORDS = /^(public|media|images|audio|rathalos|webp|mp|Fandom)$/;
-
 test.describe('localisation', () => {
   test('English is LTR, Arabic is RTL, and the choice persists', async ({ page }) => {
     await start(page);
@@ -88,17 +85,15 @@ test.describe('localisation', () => {
     leaks.compendium = await latinLeaks(page);
 
     await page.goto('./#/about');
-    leaks.about = (await latinLeaks(page)).filter((w) => !FILE_WORDS.test(w.split(' ')[0]));
+    leaks.about = await latinLeaks(page);
 
     await page.goto('./');
-    await page.locator('.home-actions .btn').first().click();
+    await page.locator('.home-actions .menu-item').first().click();
     leaks.gamesDialog = await latinLeaks(page);
     await page.keyboard.press('Escape');
-    await page.locator('.home-actions .btn').nth(1).click();
+    await page.locator('.home-actions .menu-item').nth(1).click();
     leaks.statsDialog = await latinLeaks(page);
 
-    await page.goto('./#/surveyor');
-    leaks.unavailable = (await latinLeaks(page)).filter((w) => !FILE_WORDS.test(w.split(' ')[0]));
 
     for (const [screen, words] of Object.entries(leaks)) expect(words, `untranslated text on ${screen}`).toEqual([]);
   });

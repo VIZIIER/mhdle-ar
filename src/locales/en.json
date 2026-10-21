@@ -77,7 +77,6 @@
       "one": "Playing with {count} game selected",
       "other": "Playing with {count} games selected"
     },
-    "hiddenModes": "Surveyor and Roar appear here once monster pictures and sounds are installed.",
     "changeGames": "Change my game choices"
   },
   "game": {
@@ -94,7 +93,7 @@
     "wrongGuesses": "Your guesses",
     "none": "None",
     "unknown": "?",
-    "unknownTitle": "No data in the source",
+    "unknownTitle": "Unknown",
     "poolEmpty": "None of your selected games has a monster for this quest.",
     "chooseGames": "Choose games",
     "loading": "Loading…"
@@ -238,10 +237,6 @@
     "resetConfirm": "Erase all progress, streaks and statistics saved on this device?",
     "close": "Close"
   },
-  "unavailable": {
-    "title": "This quest isn't installed",
-    "text": "Surveyor needs monster pictures and Roar needs monster sounds. Add files named after monster ids (for example rathalos.webp or rathalos.mp3) to public/media/images or public/media/audio, then rebuild the site."
-  },
   "notFound": {
     "title": "This page doesn't exist",
     "link": "Go to the quest board"
@@ -260,7 +255,7 @@
     "extraTitle": "Infinite mode, streaks and sharing",
     "extraText": "After clearing a daily quest you can keep playing with random monsters in infinite mode. Clear every quest on a day to grow your streak; miss a day and it resets. Share your result with a link that carries your game selection, so friends get the same monster and see your score to beat.",
     "dataTitle": "Data and credits",
-    "dataText": "Monster attributes come from the Monster Hunter Wiki on Fandom, used under CC BY-SA 3.0. Descriptions and Arabic text were written for this project. Sizes are gold-crown sizes in centimetres. Threat levels use the ratings from the original Monster Hunter DLE, so the Classic column matches that game; they are not always the same as the in-game Hunter's Notes stars. Missing values are shown as “?”.",
+    "dataText": "Monster information comes from the Monster Hunter Wiki (Fandom), under CC BY-SA 3.0. Threat levels follow the original Monster Hunter DLE. Sizes are gold-crown sizes in centimetres. A “?” means the value is unknown.",
     "privacyTitle": "Privacy",
     "privacyText": "Everything is stored only in your browser (local storage). There are no accounts, cookies, ads or trackers."
   },

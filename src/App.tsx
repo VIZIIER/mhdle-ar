@@ -1,8 +1,8 @@
-import { HashRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Navigate, Route, Routes } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import type { ModeId } from './games/modes';
 import { I18nProvider } from './i18n/I18nProvider';
-import { About, NotFound, Unavailable } from './pages/About';
+import { About, NotFound } from './pages/About';
 import { ClassicPage } from './pages/ClassicPage';
 import { CompendiumPage } from './pages/CompendiumPage';
 import { Home } from './pages/Home';
@@ -11,10 +11,10 @@ import { SurveyorPage } from './pages/SurveyorPage';
 import { AppStateProvider, useAppState } from './state/AppState';
 import { ScrollToTop } from './components/ScrollToTop';
 
-/** Renders a mode page only when its media is installed (Surveyor needs pictures, Roar needs sounds). */
+/** Modes without their media (Surveyor needs pictures, Roar needs sounds) redirect to the home page. */
 function Guard({ mode, children }: { mode: ModeId; children: React.ReactNode }) {
   const { modes } = useAppState();
-  return modes.includes(mode) ? <>{children}</> : <Unavailable />;
+  return modes.includes(mode) ? <>{children}</> : <Navigate to="/" replace />;
 }
 
 function Routed() {

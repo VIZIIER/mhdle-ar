@@ -2,7 +2,7 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Countdown } from '../components/Countdown';
 import { addDays } from '../utils/day';
-import { MODE_IDS, MODES } from '../games/modes';
+import { ModeIcon } from '../components/ModeIcon';
 import { completedModes, loadModeRounds, updateStreak } from '../persistence/progress';
 import { loadRaw, saveRaw } from '../persistence/storage';
 import { useI18n } from '../i18n/I18nProvider';
@@ -36,14 +36,7 @@ export function Home() {
     <div className="home">
       <section className="home-hero">
         <h1 className="home-title">{t('app.tagline')}</h1>
-        <div className="home-actions">
-          <button type="button" className="btn btn-dark" onClick={() => openDialog('games')}>
-            {t('home.changeGames')}
-          </button>
-          <button type="button" className="btn btn-dark" onClick={() => openDialog('stats')}>
-            {t('nav.stats')}
-          </button>
-        </div>
+        <span className="flourish" aria-hidden="true" />
         <p className="home-message parchment" role="status">
           {message}
         </p>
@@ -61,9 +54,9 @@ export function Home() {
             return (
               <li key={mode}>
                 <Link to={`/${mode}`} className={cleared ? 'quest quest-cleared' : 'quest'}>
-                  <span className="quest-pin" aria-hidden="true" />
-                  <span className="quest-icon" aria-hidden="true">
-                    {MODES[mode].emoji}
+                  <span className="orb" aria-hidden="true" />
+                  <span className="quest-icon">
+                    <ModeIcon mode={mode} />
                   </span>
                   <span className="quest-text">
                     <span className="quest-name">{t(`modes.${mode}.name`)}</span>
@@ -82,8 +75,22 @@ export function Home() {
             );
           })}
         </ul>
-        {modes.length < MODE_IDS.length && <p className="note home-hidden">{t('home.hiddenModes')}</p>}
       </section>
+
+      <nav className="home-actions menu" aria-label={t('nav.home')}>
+        <button type="button" className="menu-item" onClick={() => openDialog('games')}>
+          <span className="orb" aria-hidden="true" />
+          {t('home.changeGames')}
+        </button>
+        <button type="button" className="menu-item" onClick={() => openDialog('stats')}>
+          <span className="orb" aria-hidden="true" />
+          {t('nav.stats')}
+        </button>
+        <Link to="/about" className="menu-item">
+          <span className="orb" aria-hidden="true" />
+          {t('nav.about')}
+        </Link>
+      </nav>
 
       <section className="home-meta">
         <Countdown label={t('home.nextIn')} />

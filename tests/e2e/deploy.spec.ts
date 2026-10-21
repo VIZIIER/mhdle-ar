@@ -27,10 +27,10 @@ test.describe('GitHub Pages sub-path deployment', () => {
     await page.evaluate(() => document.fonts.ready);
     const fonts = await page.evaluate(() => [...document.fonts].filter((f) => f.status === 'loaded').map((f) => f.family));
     expect(fonts.join(',')).toMatch(/IBM Plex Sans Arabic/);
-    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(20, 35, 29)');
+    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(35, 35, 28)');
   });
 
-  for (const route of ['#/classic', '#/compendium', '#/about', '#/surveyor', '#/roar', '#/does-not-exist']) {
+  for (const route of ['#/classic', '#/compendium', '#/about', '#/does-not-exist']) {
     test(`direct navigation and refresh work for ${route}`, async ({ page }) => {
       await start(page, route);
       await expect(page.locator('main h1')).toBeVisible();
@@ -40,8 +40,10 @@ test.describe('GitHub Pages sub-path deployment', () => {
     });
   }
 
-  test('modes without installed media explain why instead of breaking', async ({ page }) => {
+  test('modes without media send players to the home page, with no setup notes', async ({ page }) => {
     await start(page, '#/surveyor');
-    await expect(page.locator('main h1')).toHaveText("This quest isn't installed");
+    await expect(page).toHaveURL(/#\/$/);
+    await expect(page.locator('.home-title')).toBeVisible();
+    await expect(page.locator('body')).not.toContainText(/install|public\/media|rebuild/i);
   });
 });
