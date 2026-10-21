@@ -26,7 +26,7 @@ Fields taken from each page:
 | Ailments | `Ailments` | Same filtering |
 | Weaknesses | `Weakest to` | Same filtering |
 | Max / Min size | `Monster Size` | Gold-crown large / small sizes in cm. Single-value pages use that value for both. Missing → "?" |
-| Threat level | In-game description blocks (`Threat Level N = ★…`) | Range of the star ratings recorded for main-series games (MH3/3U, MH4/4U, MHGen/GU, MHRise/RS, Wilds). Missing for 67 monsters → "?" |
+| Threat level | In-game description blocks (`Threat Level N = ★…`) | Range of the star ratings recorded for MH3/3U, MH4/4U, MHGen/GU and MHRise/RS. Nine more were taken from the per-game Hunter's Notes pages on monsterhunterwiki.org (and Fextralife for Gaismagorm); each is listed in `data-raw/patches.json` with its URL. Monsters with no rated game stay "?" (61), see LIMITATIONS.md |
 | First appearance | Lead sentence ("introduced in …") | When absent, the earliest main-series game in the monster's categories (documented fallback) |
 | Generation | `Generation` | 1–6 |
 | Games | Page categories | Used for the game selection |

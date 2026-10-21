@@ -53,6 +53,8 @@ const toIds = (list, dict, kind, name) =>
 const errors = [];
 const monsters = wiki.map((raw) => {
   const p = patches[raw.n] ?? {};
+  // Every manual threat value must say where it comes from.
+  if ('t' in p && p.t !== null && !p.threatSource) errors.push(`Patch for ${raw.n} sets a threat level without a threatSource`);
   const r = { ...raw, ...p };
   const tr = i18n[r.n];
   if (!tr) { errors.push(`Missing translation entry for ${r.n}`); return null; }

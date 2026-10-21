@@ -3,35 +3,167 @@
   "patches": {
     "Gravios": {
       "reason": "Page uses the 'New Monster Infobox' template, which the extractor did not read. Values transcribed from that infobox; Poison is listed for 6th Gen (Wilds), a main-series game.",
-      "c": "Flying Wyvern", "e": ["Fire"], "a": ["Fireblight", "Sleep", "Poison"], "w": ["Water"],
-      "s": [1049.35, 3065.9], "g": 1, "ti": ["Armor Wyvern"]
+      "c": "Flying Wyvern",
+      "e": [
+        "Fire"
+      ],
+      "a": [
+        "Fireblight",
+        "Sleep",
+        "Poison"
+      ],
+      "w": [
+        "Water"
+      ],
+      "s": [
+        1049.35,
+        3065.9
+      ],
+      "g": 1,
+      "ti": [
+        "Armor Wyvern"
+      ]
     },
     "Lagiacrus": {
       "reason": "'Weakest to' uses a malformed <br/ > tag that broke line splitting. Infobox lists Fire (Earth is a spin-off-only element).",
-      "w": ["Fire"]
+      "w": [
+        "Fire"
+      ]
     },
     "Safi'jiiva": {
       "reason": "Infobox 'Weakest to' reads 'All'.",
-      "w": ["Fire", "Water", "Thunder", "Ice", "Dragon"]
+      "w": [
+        "Fire",
+        "Water",
+        "Thunder",
+        "Ice",
+        "Dragon"
+      ]
     },
     "Gore Magala": {
       "reason": "Wiki lists '???' type (4th-5th Gen) and Demi Elder (Wilds).",
-      "c": ["Unclassified", "Demi Elder"]
+      "c": [
+        "Unclassified",
+        "Demi Elder"
+      ]
     },
-    "Chaotic Gore Magala": { "reason": "Wiki lists '???' type.", "c": ["Unclassified"] },
-    "Omega Planetes": { "reason": "Wiki lists '???' type.", "c": ["Unclassified"] },
+    "Chaotic Gore Magala": {
+      "reason": "Wiki lists '???' type.",
+      "c": [
+        "Unclassified"
+      ]
+    },
+    "Omega Planetes": {
+      "reason": "Wiki lists '???' type.",
+      "c": [
+        "Unclassified"
+      ]
+    },
     "Apex Diablos": {
       "reason": "Infobox 'Weakest to' reads '?'. Kept as unknown rather than guessing.",
-      "unknown": ["weaknesses"]
+      "unknown": [
+        "weaknesses"
+      ]
     },
     "Green Plesioth": {
-      "reason": "Titles were stored comma-separated in one field.",
-      "ti": ["Green Water Wyvern", "The Tide"]
+      "reason": "Titles were stored comma-separated in one field. Threat level: MH3U Hunter's Notes: Threat ★★★★★ (own entry).",
+      "ti": [
+        "Green Water Wyvern",
+        "The Tide"
+      ],
+      "t": [
+        5,
+        5
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Green_Plesioth_(MH3U)"
     },
     "Rey Dau": {
       "reason": "Third title contains wiki link markup; only the first two are used.",
-      "ti": ["Shining Thunder Wyvern", "Earth-Piercing Bolt"]
+      "ti": [
+        "Shining Thunder Wyvern",
+        "Earth-Piercing Bolt"
+      ]
+    },
+    "Abyssal Lagiacrus": {
+      "reason": "Threat level: MH3U Hunter's Notes: Threat ★★★★★★ (own entry).",
+      "t": [
+        6,
+        6
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Abyssal_Lagiacrus_(MH3U)"
+    },
+    "Dire Miralis": {
+      "reason": "Threat level: MH3U Hunter's Notes: Threat ★★★★★★ (own entry).",
+      "t": [
+        6,
+        6
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Dire_Miralis_(MH3U)"
+    },
+    "Hallowed Jhen Mohran": {
+      "reason": "Threat level: MH3U Hunter's Notes: Threat ★★★★★★ (own entry).",
+      "t": [
+        6,
+        6
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Hallowed_Jhen_Mohran_(MH3U)"
+    },
+    "Sand Barioth": {
+      "reason": "Threat level: MH3U Hunter's Notes: Threat ★★★★★ (own entry).",
+      "t": [
+        5,
+        5
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Sand_Barioth_(MH3U)"
+    },
+    "Gaismagorm": {
+      "reason": "Threat level: MH Rise: Sunbreak Hunter's Notes: Threat Level ★×10. Confirmed by two sources.",
+      "t": [
+        10,
+        10
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Gaismagorm_(MHRS) ; https://monsterhunterrise.wiki.fextralife.com/Gaismagorm"
+    },
+    "Savage Deviljho": {
+      "reason": "Threat level: No own entry in MH3U/MH4U/MHGU: the game shows the shared Deviljho entry, Threat ★★★★★★.",
+      "t": [
+        6,
+        6
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Savage_Deviljho_(MH4U) ; https://monsterhunterwiki.org/wiki/Savage_Deviljho_(MHGU) ; https://monsterhunterwiki.org/wiki/Savage_Deviljho_(MH3U)"
+    },
+    "Raging Brachydios": {
+      "reason": "Threat level: No own entry in MH4U/MHGU: the game shows the shared Brachydios entry, Threat ★★★★★.",
+      "t": [
+        5,
+        5
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Raging_Brachydios_(MH4U) ; https://monsterhunterwiki.org/wiki/Raging_Brachydios_(MHGU)"
+    },
+    "Rusted Kushala Daora": {
+      "reason": "Threat level: No own entry in MH4U: the game shows the shared Kushala Daora entry, Threat ★★★★★★.",
+      "t": [
+        6,
+        6
+      ],
+      "threatSource": "https://monsterhunterwiki.org/wiki/Rusted_Kushala_Daora_(MH4U)"
+    },
+    "Balahara": {
+      "reason": "Threat level removed: the wiki writes the Wilds rating as '★-★★★★★' (a 1–5 range that varies per encounter), which the original import miscounted as 6. Wilds has no fixed per-monster threat level.",
+      "t": null,
+      "threatSource": "https://monsterhunter.fandom.com/wiki/Monster_Hunter_Wilds"
+    },
+    "Doshaguma": {
+      "reason": "Threat level removed: the wiki writes the Wilds rating as '★-★★★★★' (a 1–5 range that varies per encounter), which the original import miscounted as 6. Wilds has no fixed per-monster threat level.",
+      "t": null,
+      "threatSource": "https://monsterhunter.fandom.com/wiki/Monster_Hunter_Wilds"
+    },
+    "Nu Udra": {
+      "reason": "Threat level removed: the wiki writes the Wilds rating as '★-★★★★★' (a 1–5 range that varies per encounter), which the original import miscounted as 6. Wilds has no fixed per-monster threat level.",
+      "t": null,
+      "threatSource": "https://monsterhunter.fandom.com/wiki/Monster_Hunter_Wilds"
     }
   },
-  "firstAppearanceFallback": "When the wiki lead sentence names no game, the earliest main-series game in the monster's game list is used (affects collaboration and Wilds monsters whose lead sentence is phrased differently)."
+  "firstAppearanceFallback": "When the wiki lead sentence names no game, the earliest main-series game in the monster's game list is used (affects collaboration and Wilds monsters whose lead sentence is phrased differently).",
+  "_threatNote": "Threat level = the star rating in a game's Hunter's Notes (MH3U, MH4/4U, MHGen/GU, MHRise/Sunbreak). Monster Hunter World/Iceborne has no such rating, and Wilds rates each encounter (1–5 stars) rather than each monster, so monsters only in those games keep threat = null (shown as '?')."
 }

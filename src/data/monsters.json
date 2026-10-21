@@ -38,7 +38,10 @@
     "min": 3969.3,
     "max": 3969.3
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mh3u",
    "generation": 3,
    "games": [
@@ -1170,10 +1173,7 @@
     "min": 1702.22,
     "max": 2371.64
    },
-   "threat": {
-    "min": 6,
-    "max": 6
-   },
+   "threat": null,
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -3144,7 +3144,10 @@
     "min": 6288,
     "max": 6288
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mh3u",
    "generation": 3,
    "games": [
@@ -3218,10 +3221,7 @@
     "min": 1237.51,
     "max": 1807.61
    },
-   "threat": {
-    "min": 6,
-    "max": 6
-   },
+   "threat": null,
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -3884,7 +3884,10 @@
     "min": 4807.54,
     "max": 4807.54
    },
-   "threat": null,
+   "threat": {
+    "min": 10,
+    "max": 10
+   },
    "firstGame": "mhrs",
    "generation": 5,
    "games": [
@@ -4942,7 +4945,10 @@
     "min": 2125.3,
     "max": 3877.9
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhg",
    "generation": 1,
    "games": [
@@ -5282,7 +5288,10 @@
     "min": 11161.9,
     "max": 11161.9
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mh3u",
    "generation": 3,
    "games": [
@@ -7244,10 +7253,7 @@
     "min": 1884.32,
     "max": 2386.81
    },
-   "threat": {
-    "min": 6,
-    "max": 6
-   },
+   "threat": null,
    "firstGame": "mhwilds",
    "generation": 6,
    "games": [
@@ -7904,7 +7910,10 @@
     "min": 2130.5,
     "max": 2130.5
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mh4u",
    "generation": 4,
    "games": [
@@ -8746,7 +8755,10 @@
     "min": 1261.6,
     "max": 2129
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mh2",
    "generation": 2,
    "games": [
@@ -8871,7 +8883,10 @@
     "min": 1730.62,
     "max": 2277.13
    },
-   "threat": null,
+   "threat": {
+    "min": 5,
+    "max": 5
+   },
    "firstGame": "mhp3",
    "generation": 3,
    "games": [
@@ -8908,7 +8923,10 @@
     "min": 1803,
     "max": 4097.8
    },
-   "threat": null,
+   "threat": {
+    "min": 6,
+    "max": 6
+   },
    "firstGame": "mh3u",
    "generation": 3,
    "games": [
