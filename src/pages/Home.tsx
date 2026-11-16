@@ -2,7 +2,8 @@ import { useMemo, useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Countdown } from '../components/Countdown';
 import { addDays } from '../utils/day';
-import { MODE_IDS, MODES } from '../games/modes';
+import { MODE_IDS } from '../games/modes';
+import { ModeIcon } from '../components/ModeIcon';
 import { completedModes, loadModeRounds, updateStreak } from '../persistence/progress';
 import { loadRaw, saveRaw } from '../persistence/storage';
 import { useI18n } from '../i18n/I18nProvider';
@@ -63,7 +64,7 @@ export function Home() {
                 <Link to={`/${mode}`} className={cleared ? 'quest quest-cleared' : 'quest'}>
                   <span className="quest-pin" aria-hidden="true" />
                   <span className="quest-icon" aria-hidden="true">
-                    {MODES[mode].emoji}
+                    <ModeIcon mode={mode} cleared={cleared} size={52} />
                   </span>
                   <span className="quest-text">
                     <span className="quest-name">{t(`modes.${mode}.name`)}</span>

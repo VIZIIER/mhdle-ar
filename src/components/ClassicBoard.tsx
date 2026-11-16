@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react';
+import { useRef, useState, type CSSProperties } from 'react';
 import type { Monster } from '../data';
 import { COLUMNS, compareMonsters, type Cell } from '../games/compare';
 import { formatColumn } from '../utils/format';
@@ -81,6 +81,28 @@ export function ClassicBoard({ guesses, answer, freshId }: Props) {
   );
 }
 
+const UI = `${import.meta.env.BASE_URL}media/ui/`;
+
+/** The original's easter egg: the Palico next to the colour key blows its horn when clicked. */
+function PalicoHorn() {
+  const { t } = useI18n();
+  const horn = useRef<HTMLAudioElement | null>(null);
+  const [blowing, setBlowing] = useState(false);
+  const blow = () => {
+    horn.current ??= new Audio(`${UI}horn.mp3`);
+    const a = horn.current;
+    a.volume = 0.3;
+    a.currentTime = 0;
+    a.onended = () => setBlowing(false);
+    a.play().then(() => setBlowing(true)).catch(() => setBlowing(false));
+  };
+  return (
+    <button type="button" className={blowing ? 'palico blowing' : 'palico'} onClick={blow} aria-label={t('classic.horn')} title={t('classic.horn')}>
+      <img src={`${UI}palico.webp`} alt="" width={72} height={72} loading="lazy" draggable={false} />
+    </button>
+  );
+}
+
 export function ClassicLegend() {
   const { t } = useI18n();
   const items: [string, string][] = [
@@ -91,6 +113,7 @@ export function ClassicLegend() {
   ];
   return (
     <section className="legend" aria-labelledby="legend-title">
+      <PalicoHorn />
       <h2 id="legend-title">{t('classic.legendTitle')}</h2>
       <ul>
         {items.map(([k, label]) => (

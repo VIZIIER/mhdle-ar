@@ -17,8 +17,8 @@ A daily Monster Hunter guessing game in the style of [Monster Hunter DLE](https:
 |---|---|---|---|
 | **Classic** | Compares 9 attributes with each guess: element, ailments, weaknesses, class, max and min size, threat level, first appearance, generation. Green / orange / red tiles, with ↑/↓ arrows | — | ✅ |
 | **Compendium** | An original field-guide entry with the name masked | Class after 5 wrong guesses, nickname after 10 | ✅ |
-| **Surveyor** | A picture that starts as a dark 15 px blur and sharpens with each miss | — | Needs pictures ([why](#media-for-surveyor-and-roar)) |
-| **Roar** | The monster's cry, with play/pause and volume | Class after 5, nickname after 10 | Needs sounds |
+| **Surveyor** | A picture that starts as a dark 15 px blur and sharpens with each miss | — | ✅ (248 monsters) |
+| **Roar** | The monster's cry, with play/pause and volume | Class after 5, nickname after 10 | ✅ (191 monsters with a roar) |
 
 Shared features, matching the original:
 
@@ -150,7 +150,7 @@ src/
   components/   UI: SearchBox, ClassicBoard, Hints, WinPanel, SharePanel, dialogs, Layout…
   pages/        Home (quest board), Classic, Compendium, Surveyor, Roar, About
   styles/       global.css (design tokens, logical properties for RTL)
-public/media/   Optional monster pictures, icons and sounds (not shipped)
+public/media/   Monster pictures, icons and roars, plus interface art in ui/
 scripts/        Data build, validation, media manifest
 data-raw/       Source extract, translations, documented patches
 tests/          engine.test.ts (unit) · e2e/*.spec.ts (Playwright)
@@ -178,18 +178,23 @@ tests/          engine.test.ts (unit) · e2e/*.spec.ts (Playwright)
 
 ## Media for Surveyor and Roar
 
-Official renders and roars are Capcom's property, and the original site grants no reuse rights, so none are included. Both modes stay hidden until media exists:
+The repository ships monster icons, pictures and roars taken from the original MHDLE site (see [docs/DATA_SOURCES.md](docs/DATA_SOURCES.md#media)). **They are Capcom's property**, used here as a fan tribute the same way the original uses them. They are not covered by this project's MIT or CC licences, and Capcom can ask for them to be removed.
+
+Files are named after monster IDs:
 
 ```
 public/media/images/<monster-id>.webp|png|jpg|avif   → Surveyor (and the win-screen picture)
 public/media/audio/<monster-id>.mp3|ogg|m4a|wav      → Roar
-public/media/icons/<monster-id>.webp|png|svg         → optional icons in search and the Classic grid
+public/media/icons/<monster-id>.webp|png|svg         → icons in search, guess lists and the Classic grid
+public/media/ui/                                     → mode emblems, the Palico and its horn
 ```
 
 - IDs are listed in `src/data/monsters.json`, for example `rathalos`, `kushala-daora` and `dahren-mohran`.
-- A mode appears as soon as one monster has a file. Only monsters with media can be that mode's answer, but any monster can be guessed.
+- Coverage: 248 of 249 monsters have an icon and a picture (plain Yian Garuga isn't on the original site), and 191 have a roar (the original has none for the other 58).
+- A mode appears as soon as one monster has a file. Only monsters with media can be that mode's answer, but any monster can be guessed. Delete the files and the two modes hide themselves again.
 - The manifest is regenerated on every `dev` and `build`, and files that don't match an ID are reported.
-- Without icons, monsters get a neutral initial-letter token.
+- A monster without an icon gets a neutral initial-letter token.
+- Pictures are resized to at most 900 px and icons to 160 px (WebP) to keep the site light.
 
 ## Translations
 
@@ -204,4 +209,5 @@ public/media/icons/<monster-id>.webp|png|svg         → optional icons in searc
 - **Code:** MIT (`LICENSE`).
 - **Monster attributes:** Monster Hunter Wiki contributors, **CC BY-SA 3.0**. `src/data/monsters.json` and `data-raw/` are shared under the same licence.
 - **Descriptions and Arabic text:** written for this project, CC BY-SA 3.0.
+- **Monster icons, pictures, roars and the files in `public/media/ui/`:** not licensed. © Capcom (monster art and sounds) and the original MHDLE site (mode emblems); included as fan use only.
 - **Fonts:** Cinzel, Reem Kufi and IBM Plex Sans Arabic, SIL Open Font License, self-hosted via @fontsource.

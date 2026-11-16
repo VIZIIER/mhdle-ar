@@ -10,6 +10,7 @@ import { useAppState } from '../state/AppState';
 import { GuessList } from './GuessList';
 import { Hints } from './Hints';
 import { Modal } from './Modal';
+import { ModeIcon } from './ModeIcon';
 import { SearchBox } from './SearchBox';
 import { WinPanel } from './WinPanel';
 
@@ -58,8 +59,8 @@ export function ModeShell({ mode, api, clue, board, aside, onGuess }: Props) {
     <article className={`mode mode-${mode}`}>
       <header className="mode-head">
         <h1>
-          <span className="mode-emoji" aria-hidden="true">
-            {MODES[mode].emoji}
+          <span className="mode-emoji">
+            <ModeIcon mode={mode} cleared={won && !api.isInfinite} size={40} />
           </span>{' '}
           {t(`modes.${mode}.name`)}
         </h1>

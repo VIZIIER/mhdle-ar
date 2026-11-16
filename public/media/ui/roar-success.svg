@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="27.2 30.5 66 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-4044,-583)">
+        <g id="roar-success" transform="matrix(0.0419869,0,0,0.0510924,4076.74,625.427)">
+            <rect x="-774.564" y="-828.652" width="2858.04" height="2480.36" style="fill:none;"/>
+            <g transform="matrix(23.817,0,0,19.5724,-8817.53,-5361.53)">
+                <g transform="matrix(2.21938,0,0,2.21938,-252.008,-957.811)">
+                    <path d="M294.969,554.747L294.969,575.164C294.969,576.706 293.719,577.956 292.177,577.956L283.24,577.985C282.439,577.988 281.669,577.671 281.101,577.105C280.534,576.539 280.214,575.77 280.214,574.969L280.214,566.988C280.214,566.711 280.325,566.444 280.521,566.248C280.717,566.052 280.984,565.941 281.261,565.941L289.21,565.941C289.488,565.941 289.754,566.052 289.951,566.248C290.147,566.444 290.257,566.711 290.257,566.988L290.257,572.923C290.257,573.2 290.147,573.466 289.951,573.663C289.754,573.859 289.488,573.969 289.21,573.969L287.267,573.969C284.755,574.01 284.576,571.382 286.731,571.008C287.031,570.951 287.248,570.688 287.248,570.382C287.267,569.806 287.267,569.01 287.267,569.01L283.22,569.01L283.22,574.969L292.182,574.969L292.22,550.95C292.22,550.95 294.663,550.961 296.16,550.968C296.836,550.971 297.477,551.271 297.911,551.789C299.684,553.962 302.282,554.119 305.27,553.093C301.937,560.902 297.079,558.596 294.969,554.747Z" style="fill:url(#_Linear1);"/>
+                </g>
+            </g>
+            <g transform="matrix(10.089,-2.50516,3.78813,10.3027,-40873.8,1384.56)">
+                <g transform="matrix(72,0,0,72,3928.9,854.88)">
+                </g>
+                <text x="3681.3px" y="854.88px" style="font-family:'Monsterhunter', 'Monster hunter';font-size:72px;fill:rgb(46,204,113);">Success</text>
+            </g>
+        </g>
+    </g>
+    <defs>
+        <linearGradient id="_Linear1" x1="0" y1="0" x2="1" y2="0" gradientUnits="userSpaceOnUse" gradientTransform="matrix(39.22,0.576761,-0.576761,39.22,272.933,564.439)"><stop offset="0" style="stop-color:rgb(145,48,56);stop-opacity:1"/><stop offset="1" style="stop-color:rgb(225,78,91);stop-opacity:1"/></linearGradient>
+    </defs>
+</svg>

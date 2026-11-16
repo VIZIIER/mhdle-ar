@@ -1,14 +1,16 @@
 # Incomplete features, missing data and limitations
 
-## Not playable out of the box
+## Media coverage
 
-| Item | Why | What it takes |
+All four modes are playable. Monster icons, pictures and roars come from the original MHDLE site (see [DATA_SOURCES.md](DATA_SOURCES.md#media)).
+
+| Item | Coverage | Gap |
 |---|---|---|
-| **Surveyor mode** | Needs a picture of each monster. The original uses Capcom renders, which the original site doesn't license and which Capcom owns, so none are shipped | Add pictures you're allowed to publish to `public/media/images/<id>.webp`. The mode appears automatically ([README](../README.md#media-for-surveyor-and-roar)) |
-| **Roar mode** | Needs each monster's cry; same rights problem | Add sounds to `public/media/audio/<id>.mp3` |
-| Monster icons | Same | Optional: `public/media/icons/<id>.webp`. Otherwise a neutral initial-letter token is shown |
+| Icons and pictures | 248 of 249 monsters | Plain **Yian Garuga** isn't on the original site (only its Scarred and Deadeye variants), so it shows the initial-letter token and can't be a Surveyor answer |
+| Roars | 191 of 249 monsters | The original has no roar for the other 58, so they can't be a Roar answer. They can still be guessed |
+| Second roars | — | 29 monsters have two recordings on the original; only the first is used |
 
-Both modes are fully implemented and were tested with placeholder media (see [TEST_REPORT.md](TEST_REPORT.md)). Until media is added they are hidden, as agreed, and the streak only requires Classic and Compendium.
+**Rights.** This media is Capcom's property and is not licensed to this project. It is included as fan use, the same basis the original site relies on. If it has to be removed, delete the files in `public/media/`: Surveyor and Roar then hide themselves and the streak only requires Classic and Compendium.
 
 ## Data gaps
 
@@ -27,8 +29,7 @@ See [DIFFERENCES.md](DIFFERENCES.md). Notably:
 - no loss condition, the same as the original;
 - newest Classic row on top;
 - no French;
-- no ads, analytics or cookie banner;
-- no Palico horn easter egg (it needs a Capcom sound).
+- no ads, analytics or cookie banner.
 
 ## Deployment verification
 

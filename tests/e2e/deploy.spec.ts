@@ -16,6 +16,10 @@ test.describe('GitHub Pages sub-path deployment', () => {
     await start(page);
     await page.goto('./#/classic');
     await page.goto('./#/compendium');
+    await page.goto('./#/surveyor');
+    await expect(page.locator('.survey-img')).toBeVisible();
+    await page.goto('./#/roar');
+    await expect(page.locator('.player')).toBeVisible();
     await page.goto('./#/about');
     await page.waitForLoadState('networkidle');
     expect(failed, 'no 4xx/5xx responses').toEqual([]);
@@ -40,8 +44,20 @@ test.describe('GitHub Pages sub-path deployment', () => {
     });
   }
 
-  test('modes without installed media explain why instead of breaking', async ({ page }) => {
-    await start(page, '#/surveyor');
-    await expect(page.locator('main h1')).toHaveText("This quest isn't installed");
+  test('monster icons, pictures and roars are served from the repository path', async ({ page }) => {
+    await start(page, '#/classic');
+    await page.locator('.search-input').fill('rathalos');
+    const icon = page.locator('[role="option"][data-id="rathalos"] img.badge-img');
+    await expect(icon).toBeVisible();
+    await expect.poll(() => icon.evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+    expect(await icon.getAttribute('src')).toContain('media/icons/rathalos.');
+
+    await page.goto('./#/surveyor');
+    const picture = page.locator('.survey-img');
+    await expect.poll(() => picture.evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+
+    await page.goto('./#/roar');
+    const audio = page.locator('.player audio');
+    await expect.poll(() => audio.evaluate((el: HTMLAudioElement) => el.duration || 0)).toBeGreaterThan(0);
   });
 });
