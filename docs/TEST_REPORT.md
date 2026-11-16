@@ -1,6 +1,6 @@
 # Test report
 
-Run on 18 October 2026, on the final code in this repository. Results are reproducible with `npm run test:all`. The same steps run in the GitHub Actions workflow before every deployment.
+First run on 18 October 2026; re-run on 16 November 2026 after monster icons, pictures and roars were added. Figures below are from the second run, on the code in this repository. Results are reproducible with `npm run test:all`. The same steps run in the GitHub Actions workflow before every deployment.
 
 ## Summary
 
@@ -10,9 +10,10 @@ Run on 18 October 2026, on the final code in this repository. Results are reprod
 | Data validation (`npm run data:validate`): 249 monsters, locale key parity, media references | ✅ passed |
 | Production build (`npm run build`) | ✅ passed |
 | Unit tests (Vitest) | ✅ **32 / 32 passed** |
-| End-to-end tests (Playwright, Chromium), desktop 1280×900 + Pixel 7 mobile | ✅ **50 / 50 passed** (25 scenarios × 2 viewports) |
-| Flakiness check (`--repeat-each=2`) | ✅ 100 / 100 passed (an earlier intermittent failure was traced to bug 7 below and fixed) |
-| Clean install from the packaged zip (`npm ci`, test, build) | ✅ passed |
+| End-to-end tests (Playwright, Chromium), desktop 1280×900 + Pixel 7 mobile | ✅ **54 / 54 passed** (27 scenarios × 2 viewports) |
+| Media manifest | ✅ 248 pictures, 248 icons, 191 roars, every file matched to a monster id |
+| Flakiness check (`--repeat-each=2`) | Passed 100 / 100 in October (an earlier intermittent failure was traced to bug 7 below and fixed). **Not repeated** in November; the suite was run three times in a row and passed each time |
+| Clean install from the packaged zip (`npm ci`, test, build) | Passed in October. **Not repeated** in November |
 
 ## How the deployment is simulated
 
@@ -73,11 +74,13 @@ The end-to-end tests do **not** use the dev server. `dist/` is built first (`npm
 | `deploy.spec.ts` | GitHub Pages sub-path deployment › direct navigation and refresh work for #/surveyor | ✅ | ✅ |
 | `deploy.spec.ts` | GitHub Pages sub-path deployment › direct navigation and refresh work for #/roar | ✅ | ✅ |
 | `deploy.spec.ts` | GitHub Pages sub-path deployment › direct navigation and refresh work for #/does-not-exist | ✅ | ✅ |
-| `deploy.spec.ts` | GitHub Pages sub-path deployment › modes without installed media explain why instead of breaking | ✅ | ✅ |
+| `deploy.spec.ts` | GitHub Pages sub-path deployment › monster icons, pictures and roars are served from the repository path | ✅ | ✅ |
 | `gameplay.spec.ts` | gameplay › first visit asks for the game selection and the home board lists the modes | ✅ | ✅ |
 | `gameplay.spec.ts` | gameplay › Classic: wrong guesses add coloured rows, the answer wins, results persist | ✅ | ✅ |
 | `gameplay.spec.ts` | gameplay › infinite mode gives new rounds repeatedly and does not count as daily wins | ✅ | ✅ |
 | `gameplay.spec.ts` | gameplay › Compendium: masked entry, hints unlock at 5 and 10 wrong guesses | ✅ | ✅ |
+| `gameplay.spec.ts` | gameplay › Surveyor: the picture clears up with each wrong guess and is revealed on a win | ✅ | ✅ |
+| `gameplay.spec.ts` | gameplay › Roar: the cry plays, hints unlock, the answer wins | ✅ | ✅ |
 | `gameplay.spec.ts` | gameplay › search: keyboard navigation, Arabic names, no match message | ✅ | ✅ |
 | `gameplay.spec.ts` | gameplay › game selection limits answers and search, and persists | ✅ | ✅ |
 | `gameplay.spec.ts` | gameplay › share link: adopt the friend selection and see the challenge | ✅ | ✅ |
@@ -111,13 +114,9 @@ What these cover, against the brief's checklist:
 
 ## Verified manually (not automated)
 
-- **Surveyor and Roar with media installed.** A throwaway copy of the project was built with generated placeholder pictures and tones for all 249 IDs (not shipped). Checked:
-  - both modes appear on the quest board and in the navigation;
-  - the Surveyor filter starts at `blur(15px) brightness(0)` and after 3 misses is `blur(12px) brightness(0.15)`;
-  - winning shows the picture;
-  - the Roar player plays and pauses;
-  - the cleared seal appears on the home board.
-- **Visual review** of screenshots: home, Classic (playing and won), Compendium, dialogs, statistics, in English and Arabic, at 1280 px and 390 px.
+- **Surveyor and Roar with the shipped media** are now covered by the end-to-end tests above (filter progression, win picture, playback, hints, cleared seal). The "quest isn't installed" page is no longer reachable as shipped; it only appears if the media folders are emptied, and that path was **not** re-tested in November.
+- **Visual review, November:** the built site was opened in a browser at 800 px wide, in English: quest board with all four quests, Classic with monster icons in the search list and grid, Surveyor silhouette, Roar player. Arabic and phone widths were checked by the automated layout and translation tests only, not by eye.
+- **Visual review, October** of screenshots: home, Classic (playing and won), Compendium, dialogs, statistics, in English and Arabic, at 1280 px and 390 px.
 
 ## Bugs found by testing and fixed
 

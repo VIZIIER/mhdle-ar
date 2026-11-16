@@ -6,7 +6,7 @@ Everything listed in `FEATURE_INVENTORY.md` is implemented. These are the places
 |---|---|---|---|
 | Roster | 330 entries including small, Frontier and spin-off monsters | 249 large monsters from the 18 main-series games | Data had to come from a licensed source and be verifiable; agreed scope. The "Disable small monsters" option is therefore not needed |
 | Game selection | Main, Frontier and spin-off categories | Main games grouped by generation | Matches the roster |
-| Surveyor / Roar media | Capcom renders and roars bundled | No media shipped; the modes stay hidden from players (and their URLs go to the home page) until files are added | Media is Capcom's property |
+| Surveyor / Roar media | Capcom renders and roars bundled | The same files for the 249-monster roster, resized; first roar only | Taken from the original at the owner's request; still Capcom's property |
 | Daily pick | Hash of the date plus an offset; the "no repeat in 30 days" history was ineffective | Seeded shuffle per cycle: no monster repeats until the whole pool has been used | Implements the intended behaviour reliably |
 | Sizes | Strings with mixed formats, compared with `parseInt` | Numbers in cm, compared exactly | Fixes silent truncation |
 | Threat level | Its own 1–10 ratings | The same ratings, copied from MHDLE's data (248/249 monsters) | Classic comparisons behave like the original |
@@ -17,6 +17,6 @@ Everything listed in `FEATURE_INVENTORY.md` is implemented. These are the places
 | Language | Separate French and English pages; switching reloads | English and Arabic in one app; switching is instant and keeps the round | Brief |
 | Search | English names only | English and Arabic names in either interface language, Arabic-aware normalisation | Brief |
 | Midnight | "Refresh the page" message | Countdown turns into a "Hunt the new monster" button | Same intent, no reload |
-| Streak | Requires all 4 modes | Requires all *installed* modes | Surveyor/Roar may be hidden |
+| Streak | Requires all 4 modes | Requires all *installed* modes (all 4 as shipped) | Surveyor/Roar hide themselves if their media is removed |
 | Extras not in the original | — | Statistics dialog (wins, average and fewest tries per mode, best streak), reset button | "Statistics where applicable" in the brief; all values are from real play |
-| Not reproduced | Ads, Google Analytics, cookie banner, Ko-fi and affiliate links, changelog popup, Palico horn easter egg (uses a Capcom sound) | — | No trackers or third-party services; no Capcom media |
+| Not reproduced | Ads, Google Analytics, cookie banner, Ko-fi and affiliate links, changelog popup | — | No trackers or third-party services |

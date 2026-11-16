@@ -8,8 +8,8 @@ const CLASS_HUE: Record<string, number> = {
 };
 
 /**
- * The monster's icon if one is installed (public/media/icons/<id>.webp), otherwise a neutral
- * initial-letter token tinted by the monster's class. No artwork is drawn for monsters.
+ * The monster's icon (public/media/icons/<id>.webp). A monster without one gets a neutral
+ * initial-letter token tinted by its class.
  */
 export function MonsterBadge({ monster, size = 40 }: { monster: Monster; size?: number }) {
   const { lang } = useI18n();

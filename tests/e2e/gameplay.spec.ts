@@ -9,7 +9,7 @@ test.describe('gameplay', () => {
     await page.goto('./');
     await expect(page.locator('dialog[open] h2')).toHaveText('Hunter, prepare your quests!');
     await page.locator('dialog[open] .btn-primary').click();
-    await expect(page.locator('.quest-name')).toHaveText(['Classic', 'Compendium']);
+    await expect(page.locator('.quest-name')).toHaveText(['Classic', 'Compendium', 'Surveyor', 'Roar']);
   });
 
   test('Classic: wrong guesses add coloured rows, the answer wins, results persist', async ({ page }) => {
@@ -88,6 +88,45 @@ test.describe('gameplay', () => {
     await expect(page.locator('.guess')).toHaveCount(10);
   });
 
+  test('Surveyor: the picture clears up with each wrong guess and is revealed on a win', async ({ page }) => {
+    await start(page, '#/surveyor');
+    const img = page.locator('.survey-img');
+    await expect(img).toBeVisible();
+    await expect(img).toHaveCSS('filter', 'blur(15px) brightness(0)');
+    const answer = await revealAnswer(page, 'surveyor');
+    test.skip(answer === 'kirin', 'probe happened to be the answer');
+    await expect(img).toHaveCSS('filter', 'blur(14px) brightness(0.05)');
+    for (const w of wrongFor(answer, 2)) await guess(page, w);
+    await expect(img).toHaveCSS('filter', 'blur(12px) brightness(0.15)');
+    await expect(page.locator('.guess')).toHaveCount(3);
+    await page.reload();
+    await expect(page.locator('.survey-img')).toHaveCSS('filter', 'blur(12px) brightness(0.15)');
+    await guess(page, answer);
+    await expect(page.locator('.win h2')).toHaveText('Quest complete!');
+    const picture = page.locator('.win-picture');
+    await expect(picture).toBeVisible();
+    await expect.poll(() => picture.evaluate((el: HTMLImageElement) => el.naturalWidth)).toBeGreaterThan(0);
+    await page.goto('./');
+    await expect(page.locator('.quest-cleared .quest-name')).toHaveText('Surveyor');
+  });
+
+  test('Roar: the cry plays, hints unlock, the answer wins', async ({ page }) => {
+    await start(page, '#/roar');
+    const audio = page.locator('.player audio');
+    await expect.poll(() => audio.evaluate((el: HTMLAudioElement) => el.duration || 0)).toBeGreaterThan(0);
+    expect(await audio.evaluate((el: HTMLAudioElement) => el.volume)).toBeCloseTo(0.3);
+    await page.getByRole('button', { name: 'Play the roar' }).click();
+    await expect.poll(() => audio.evaluate((el: HTMLAudioElement) => !el.paused || el.ended || el.currentTime > 0)).toBe(true);
+    const answer = await revealAnswer(page, 'roar');
+    test.skip(answer === 'kirin', 'probe happened to be the answer');
+    for (const w of wrongFor(answer, 4)) await guess(page, w);
+    await page.getByRole('button', { name: 'Show the Class hint' }).click();
+    await expect(page.locator('.hint-open')).toContainText('Class');
+    await guess(page, answer);
+    await expect(page.locator('.win h2')).toHaveText('Quest complete!');
+    await expect(page.locator('.share-text')).toContainText('#/roar?s=');
+  });
+
   test('search: keyboard navigation, Arabic names, no match message', async ({ page }) => {
     await start(page, '#/classic');
     const input = page.locator('.search-input');
@@ -134,6 +173,6 @@ test.describe('gameplay', () => {
     await start(page);
     await page.locator('.home-actions .menu-item').nth(1).click();
     await expect(page.locator('dialog[open] h2')).toHaveText("Hunter's record");
-    await expect(page.locator('.stats-table tbody tr')).toHaveCount(2);
+    await expect(page.locator('.stats-table tbody tr')).toHaveCount(4);
   });
 });

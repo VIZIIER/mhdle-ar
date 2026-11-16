@@ -1,15 +1,15 @@
 # Data sources and licensing
 
-## Why the original's data and media aren't reused
+## Why the original's dataset isn't reused
 
 The reference site publishes its dataset (`monsters_en.json`, 330 entries) and its media publicly, but grants no licence to reuse them. Its legal notice also states that all images, sounds and other assets belong to Capcom. Following the brief ("where reuse is permitted… otherwise independently obtained or properly licensed"), this project:
 
-- does **not** copy the original's dataset, code, descriptions, images, icons or sounds;
+- does **not** copy the original's dataset, code or descriptions;
 - builds its attribute data from a **CC BY-SA** source;
 - writes its own descriptions and Arabic text;
-- ships **no** Capcom media. Surveyor and Roar read user-supplied files (see README → *Media*).
+- **does** ship the original's monster icons, pictures and roars, at the project owner's request (see [Media](#media) below). These are not licensed.
 
-The original was only inspected to document how its game works (see `FEATURE_INVENTORY.md`).
+The original's code and dataset were only inspected to document how its game works (see `FEATURE_INVENTORY.md`) and to find the media file for each monster.
 
 ## Monster attributes: Monster Hunter Wiki (Fandom)
 
@@ -53,8 +53,17 @@ So these values are best described as MHDLE's ratings, not official game data. T
 - **Arabic monster names:** transliterations of the official English names, since no official Arabic localisation exists.
 - **Arabic nickname translations, interface text, game names:** translated for this project.
 
+## Media
+
+- **Source:** <https://monster-hunter-dle.akato.fr>, fetched on 2026-11-16 with [Scrapling](https://github.com/D4Vinci/Scrapling). The site's `monsters_en.json` lists one icon, one picture and zero to two roars per monster; entries were matched to this project's monster IDs by English name.
+- **What was taken:** for the 249 monsters in this roster, 248 icons, 248 pictures and 191 roars (first recording only), plus the Palico picture and its horn sound for `public/media/ui/`.
+- **Not taken:** media for the 81 small, Frontier-only and variant monsters outside this roster; the original's logo, backgrounds, mode emblems and "Quest complete" stamp (this project keeps its own title, theme, line-art mode icons and translated seal).
+- **Name fixes:** the original spells three monsters differently (*Hermitaur Daimyo*, *Ceanataur Shogun*, *Tigrex berserk*). Its link to Stygian Zinogre's roar is broken by a typo (`Zynogre`); the correctly spelled file was used.
+- **Processing:** pictures resized to at most 900 px and icons to 160 px, re-encoded as WebP. Roars are unchanged MP3s.
+- **Rights:** monster renders, icons and roars are **Capcom's property**. The original's legal notice says the same and grants no licence. They are included here as non-commercial fan use and are **not** covered by this repository's MIT or CC BY-SA licences. The Palico artwork comes from the original site.
+
 ## Other assets
 
 - **Fonts:** Marcellus, Amiri and IBM Plex Sans Arabic (SIL Open Font License 1.1), bundled through @fontsource packages.
-- **Icons:** the favicon and interface icons are original inline SVG or Unicode.
-- **Monster tokens:** coloured initials, not artwork.
+- **Icons:** the favicon, mode icons and top-bar icons are original inline SVG or Unicode.
+- **Monster tokens:** coloured initials, used only where a monster has no icon.

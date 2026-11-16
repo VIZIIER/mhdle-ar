@@ -5,7 +5,7 @@
     "docTitle": "MH DLE · Monster Hunter guessing game",
     "skip": "Skip to the game",
     "disclaimer": "Unofficial fan game. Monster Hunter and its monster names are trademarks of Capcom Co., Ltd. This site isn't affiliated with or endorsed by Capcom.",
-    "dataCredit": "Monster data: Monster Hunter Wiki (Fandom), CC BY-SA 3.0."
+    "dataCredit": "Monster data: Monster Hunter Wiki (Fandom), CC BY-SA 3.0. Monster icons, pictures and roars © Capcom."
   },
   "nav": {
     "home": "Quest board",
@@ -133,7 +133,8 @@
     "partialNote": "Partial means some values match. For threat level it means the ranges overlap.",
     "higherTitle": "The answer is higher",
     "lowerTitle": "The answer is lower",
-    "scrollNote": "Scroll sideways to see every column."
+    "scrollNote": "Scroll sideways to see every column.",
+    "horn": "Blow the Palico's horn"
   },
   "surveyor": {
     "imageAlt": "Blurred picture of the mystery monster",
@@ -255,7 +256,7 @@
     "extraTitle": "Infinite mode, streaks and sharing",
     "extraText": "After clearing a daily quest you can keep playing with random monsters in infinite mode. Clear every quest on a day to grow your streak; miss a day and it resets. Share your result with a link that carries your game selection, so friends get the same monster and see your score to beat.",
     "dataTitle": "Data and credits",
-    "dataText": "Monster information comes from the Monster Hunter Wiki (Fandom), under CC BY-SA 3.0. Threat levels follow the original Monster Hunter DLE. Sizes are gold-crown sizes in centimetres. A “?” means the value is unknown.",
+    "dataText": "Monster information comes from the Monster Hunter Wiki (Fandom), under CC BY-SA 3.0. Threat levels follow the original Monster Hunter DLE. Sizes are gold-crown sizes in centimetres. A “?” means the value is unknown. Monster icons, pictures and roars are Capcom's, shown here as a fan tribute.",
     "privacyTitle": "Privacy",
     "privacyText": "Everything is stored only in your browser (local storage). There are no accounts, cookies, ads or trackers."
   },
