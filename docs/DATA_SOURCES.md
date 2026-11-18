@@ -62,8 +62,19 @@ So these values are best described as MHDLE's ratings, not official game data. T
 - **Processing:** pictures resized to at most 900 px and icons to 160 px, re-encoded as WebP. Roars are unchanged MP3s.
 - **Rights:** monster renders, icons and roars are **Capcom's property**. The original's legal notice says the same and grants no licence. They are included here as non-commercial fan use and are **not** covered by this repository's MIT or CC BY-SA licences. The Palico artwork comes from the original site.
 
+## Theme art from Monster Hunter Wilds: Ascendance
+
+- **Source:** the story page of the official site, <https://www.monsterhunter.com/wilds-ascendance/en-us/story/>, read on 2026-11-19 with [Scrapling](https://github.com/D4Vinci/Scrapling). Its stylesheet and markup were inspected to recreate the layout and motion, and these images were downloaded into `src/assets/wilds/`:
+  - three hunting wallpapers (one per page; resized from 3840 to 1920 px);
+  - the blue paper texture, the torn top and bottom section edges, and the torn navy panel of the character pop-up (wide and tall versions);
+  - the red-to-blue title banner, its light line and two corner ornaments;
+  - the button bars (dark, framed with its hover glow, blue patterned), the button arrow, the close mark, the divider gem and finial, and the fog sprite used for the reveal.
+- **Not taken:** the site's code, logo, story text, character portraits and renders, video, and its font files.
+- **Motion:** recreated in CSS from the site's own rules. Cards land with a 3D turn (`land`), hovered buttons and cards brighten and saturate (`.hover_brightness`), the win picture floats (`floatLeft`) and is revealed by the fog sprite (`fog`, 35 steps).
+- **Rights:** this art is **Capcom's property** and is not licensed to this project. It is included as non-commercial fan use, like the monster media above, and is **not** covered by this repository's MIT or CC BY-SA licences.
+
 ## Other assets
 
-- **Fonts:** Marcellus, Amiri and IBM Plex Sans Arabic (SIL Open Font License 1.1), bundled through @fontsource packages.
-- **Icons:** the favicon, mode icons and top-bar icons are original inline SVG or Unicode.
+- **Fonts:** Source Serif 4 and Source Sans 3 (the faces the Wilds Ascendance site uses), Amiri and IBM Plex Sans Arabic, all under the SIL Open Font License 1.1 and bundled through @fontsource packages. They are installed from npm, not copied from Capcom's site.
+- **Icons:** the favicon, mode icons and top-bar icons are original inline SVG or Unicode. The diamond buttons on the quest cards and the Roar play button are CSS, drawn after the Ascendance site's zoom button.
 - **Monster tokens:** coloured initials, used only where a monster has no icon.

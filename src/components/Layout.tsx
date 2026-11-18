@@ -1,4 +1,4 @@
-import { NavLink, Outlet, Link } from 'react-router-dom';
+import { NavLink, Outlet, Link, useLocation } from 'react-router-dom';
 import { completedModes } from '../persistence/progress';
 import { useI18n } from '../i18n/I18nProvider';
 import { useAppState } from '../state/AppState';
@@ -10,9 +10,12 @@ export function Layout() {
   const { t, lang, setLang } = useI18n();
   const { modes, day, openDialog } = useAppState();
   const done = completedModes(day);
+  // Each page gets its own wallpaper (see .wallpaper[data-scene] in global.css).
+  const scene = useLocation().pathname.split('/')[1] || 'home';
 
   return (
     <div className="shell">
+      <div className="wallpaper" data-scene={scene} aria-hidden="true" />
       <a className="skip" href="#main">
         {t('app.skip')}
       </a>

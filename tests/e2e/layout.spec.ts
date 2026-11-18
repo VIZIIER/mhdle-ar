@@ -19,9 +19,18 @@ for (const lang of ['en', 'ar'] as const) {
 
 test('quest board and search box are usable at this viewport', async ({ page }) => {
   await start(page);
+  // The quest cards land with a 3D animation; measure them once it has finished (or been cancelled).
+  await page.evaluate(() =>
+    Promise.allSettled(document.getAnimations().filter((a) => a.effect?.getComputedTiming().endTime !== Infinity).map((a) => a.finished)),
+  );
+  const viewport = page.viewportSize()!.width;
+  // Character-select cards: two per row on phones, four on desktop. Each must be a comfortable
+  // tap target and fully on screen.
   for (const card of await page.locator('.quest').all()) {
     const box = (await card.boundingBox())!;
-    expect(box.width).toBeGreaterThan(200);
+    expect(box.width).toBeGreaterThan(140);
+    expect(box.x).toBeGreaterThanOrEqual(0);
+    expect(box.x + box.width).toBeLessThanOrEqual(viewport + 1);
   }
   await page.goto('./#/classic');
   const input = page.locator('.search-input');

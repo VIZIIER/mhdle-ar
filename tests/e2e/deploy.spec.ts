@@ -31,7 +31,7 @@ test.describe('GitHub Pages sub-path deployment', () => {
     await page.evaluate(() => document.fonts.ready);
     const fonts = await page.evaluate(() => [...document.fonts].filter((f) => f.status === 'loaded').map((f) => f.family));
     expect(fonts.join(',')).toMatch(/IBM Plex Sans Arabic/);
-    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(35, 35, 28)');
+    await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(7, 20, 48)');
   });
 
   for (const route of ['#/classic', '#/compendium', '#/surveyor', '#/roar', '#/about', '#/does-not-exist']) {

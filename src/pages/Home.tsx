@@ -1,12 +1,25 @@
-import { useMemo, useState } from 'react';
+import { useMemo, useState, type CSSProperties } from 'react';
 import { Link } from 'react-router-dom';
 import { Countdown } from '../components/Countdown';
 import { addDays } from '../utils/day';
 import { ModeIcon } from '../components/ModeIcon';
+import { mediaUrl } from '../data';
+import type { ModeId } from '../types';
 import { completedModes, loadModeRounds, updateStreak } from '../persistence/progress';
 import { loadRaw, saveRaw } from '../persistence/storage';
 import { useI18n } from '../i18n/I18nProvider';
 import { useAppState } from '../state/AppState';
+
+/**
+ * Fixed showcase art for each quest card (never today's answer). `focus` is the object-position
+ * that frames the monster inside the slanted card.
+ */
+const SHOWCASE: Record<ModeId, { id: string; focus: string }> = {
+  classic: { id: 'arkveld', focus: '42% 45%' },
+  compendium: { id: 'jin-dahaad', focus: '55% 50%' },
+  surveyor: { id: 'rey-dau', focus: '72% 46%' },
+  roar: { id: 'nergigante', focus: '48% 50%' },
+};
 
 export function Home() {
   const { t } = useI18n();
@@ -47,23 +60,33 @@ export function Home() {
           {t('home.heading')}
         </h2>
         <ul className="board-quests">
-          {modes.map((mode) => {
+          {modes.map((mode, i) => {
             const cleared = done.includes(mode);
             const r = loadModeRounds(mode).daily;
             const tries = r && r.day === day && !r.won ? r.guesses.length : 0;
+            const art = mediaUrl('images', SHOWCASE[mode].id);
             return (
               <li key={mode}>
-                <Link to={`/${mode}`} className={cleared ? 'quest quest-cleared' : 'quest'}>
-                  <span className="orb" aria-hidden="true" />
-                  <span className="quest-icon">
-                    <ModeIcon mode={mode} />
-                  </span>
-                  <span className="quest-text">
-                    <span className="quest-name">{t(`modes.${mode}.name`)}</span>
-                    <span className="quest-tagline">{t(`modes.${mode}.tagline`)}</span>
-                  </span>
-                  <span className="quest-state">
-                    {cleared ? t('home.cleared') : tries ? t('home.triesSoFar', { count: tries }) : t('home.open')}
+                {/* A character-select card: slanted portrait, dark name plate, diamond icon. */}
+                <Link
+                  to={`/${mode}`}
+                  className={cleared ? 'quest quest-cleared' : 'quest'}
+                  style={{ '--i': i, '--focus': SHOWCASE[mode].focus } as CSSProperties}
+                >
+                  <span className="quest-art">
+                    {art && <img src={art} alt="" loading="lazy" draggable={false} />}
+                    <span className="quest-state">
+                      {cleared ? t('home.cleared') : tries ? t('home.triesSoFar', { count: tries }) : t('home.open')}
+                    </span>
+                    <span className="quest-plate">
+                      <span className="quest-text">
+                        <span className="quest-name">{t(`modes.${mode}.name`)}</span>
+                        <span className="quest-tagline">{t(`modes.${mode}.tagline`)}</span>
+                      </span>
+                      <span className="quest-icon" aria-hidden="true">
+                        <ModeIcon mode={mode} />
+                      </span>
+                    </span>
                   </span>
                   {cleared && (
                     <span className="seal" aria-hidden="true">
@@ -79,15 +102,12 @@ export function Home() {
 
       <nav className="home-actions menu" aria-label={t('nav.home')}>
         <button type="button" className="menu-item" onClick={() => openDialog('games')}>
-          <span className="orb" aria-hidden="true" />
           {t('home.changeGames')}
         </button>
         <button type="button" className="menu-item" onClick={() => openDialog('stats')}>
-          <span className="orb" aria-hidden="true" />
           {t('nav.stats')}
         </button>
         <Link to="/about" className="menu-item">
-          <span className="orb" aria-hidden="true" />
           {t('nav.about')}
         </Link>
       </nav>

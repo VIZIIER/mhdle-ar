@@ -42,7 +42,7 @@ export function Modal({ open, title, onClose, children, footer, locked }: Props)
         <header className="modal-head">
           <h2 id="modal-title">{title}</h2>
           {!locked && (
-            <button type="button" className="icon-btn" onClick={onClose} aria-label={t('dialog.close')}>
+            <button type="button" className="icon-btn modal-close" onClick={onClose} aria-label={t('dialog.close')}>
               <span aria-hidden="true">✕</span>
             </button>
           )}

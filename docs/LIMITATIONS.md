@@ -12,6 +12,8 @@ All four modes are playable. Monster icons, pictures and roars come from the ori
 
 **Rights.** This media is Capcom's property and is not licensed to this project. It is included as fan use, the same basis the original site relies on. If it has to be removed, delete the files in `public/media/`: Surveyor and Roar then hide themselves and the streak only requires Classic and Compendium.
 
+The theme art in `src/assets/wilds/` (wallpapers, paper, banner, buttons) is also Capcom's, taken from the Monster Hunter Wilds: Ascendance site. Removing it means replacing the `url(...)` references in `src/styles/global.css`; the build fails while a referenced file is missing.
+
 ## Data gaps
 
 - **Roster:** 249 large monsters from the 18 main-series games. Small monsters, Frontier-only and spin-off-only monsters (the original lists 330 entries) are out of scope, so the original's "Disable small monsters" option isn't needed.

@@ -40,24 +40,31 @@ export function WinPanel({ mode, api, answer, challenge }: Props) {
 
   return (
     <section className="win" aria-labelledby="win-title" tabIndex={-1} ref={focusOnce}>
+      {/* Laid out like a character card: the monster on paper beside a torn navy panel. */}
       <div className="win-card">
-        <h2 id="win-title">{t('win.title')}</h2>
-        <p className="win-flavor">{t(`modes.${mode}.flavor`)}</p>
         <div className="win-reveal">
-          {picture ? (
-            <img className="win-picture" src={picture} alt={t('win.pictureAlt', { name: answer.name[lang] })} />
-          ) : (
-            <MonsterBadge monster={answer} size={96} />
-          )}
+          {/* The fog wrapper clears like mist (an animated mask) to reveal the monster. */}
+          <span className="win-fog">
+            {picture ? (
+              <img className="win-picture" src={picture} alt={t('win.pictureAlt', { name: answer.name[lang] })} />
+            ) : (
+              <MonsterBadge monster={answer} size={96} />
+            )}
+          </span>
           <span className="seal seal-stamp" aria-hidden="true">
             {t('win.stamp')}
           </span>
         </div>
-        <p className="win-answer">
-          {t('win.answer', { name: answer.name[lang] })} <bdi lang={other} className="win-alt">({answer.name[other]})</bdi>
-        </p>
-        <p className="win-tries">{t('win.in', { count: tries })}</p>
-        {versus && <p className="win-versus">{versus}</p>}
+        <div className="win-info">
+          <h2 id="win-title">{t('win.title')}</h2>
+          <p className="win-flavor">{t(`modes.${mode}.flavor`)}</p>
+          <span className="flourish" aria-hidden="true" />
+          <p className="win-answer">
+            {t('win.answer', { name: answer.name[lang] })} <bdi lang={other} className="win-alt">({answer.name[other]})</bdi>
+          </p>
+          <p className="win-tries">{t('win.in', { count: tries })}</p>
+          {versus && <p className="win-versus">{versus}</p>}
+        </div>
       </div>
 
       {api.isInfinite ? (
