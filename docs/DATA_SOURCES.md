@@ -76,5 +76,5 @@ So these values are best described as MHDLE's ratings, not official game data. T
 ## Other assets
 
 - **Fonts:** Source Serif 4 and Source Sans 3 (the faces the Wilds Ascendance site uses), Amiri and IBM Plex Sans Arabic, all under the SIL Open Font License 1.1 and bundled through @fontsource packages. They are installed from npm, not copied from Capcom's site.
-- **Icons:** the favicon, mode icons and top-bar icons are original inline SVG or Unicode. The diamond buttons on the quest cards and the Roar play button are CSS, drawn after the Ascendance site's zoom button.
+- **Icons:** the favicon is a hammer icon supplied by the project owner. Mode icons and top-bar icons are original inline SVG or Unicode. The diamond buttons on the quest cards and the Roar play button are CSS, drawn after the Ascendance site's zoom button.
 - **Monster tokens:** coloured initials, used only where a monster has no icon.
